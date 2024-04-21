@@ -1,0 +1,4052 @@
+200.0 15
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.34/39     12 March 2018   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+ROOT 5.34/39 (heads/v5-34-00-patches@v5-34-38-1-g507abd2, Dec 13 2022, 17:42:00 on linuxx8664gcc)
+
+CINT/ROOT C/C++ Interpreter version 5.18.00, July 2, 2010
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+*** Float Point Exception is OFF ***
+ *** Start at Date : Sun Apr 21 02:39:30 2024
+QAInfo:You are using STAR_LEVEL : TFG21g, git = tags/TFG21g,tag:50722f0e0, ROOT_LEVEL : 5.34.39 and node : rcas6013.rcf.bnl.gov with 8 AMD EPYC Processor (with IBPB)
+
+Processing ./readPicoDst.C("./datalist//200.0GeV_Run15/200.0.list.999999",999999,15,200.0,"./datalist/")...
+current job id: 999999
+ loading of shared libraries done
+G__catchexception=0
+Load system libraries	 + liblog4cxx + libStStarLogger
+Create chain bfc
+QA :INFO  - ==============================================
+QA :INFO  - ============= You are in TFG21g ===============
+QA :INFO  - Requested chain bfc is :	ry2016,RpicoDst,kfpInter,mysql,quiet,nodefault
+QA :INFO  -  Switch On                 mysql by Chain
+QA :INFO  -  Switch On             StBichsel by MuDSTDeps
+QA :INFO  -  Switch On            KFParticle by StEvent
+QA :INFO  -  Switch On                 globT by StEvent
+QA :INFO  -  Switch On                   SCL by StEvent
+QA :INFO  -  Switch On                 sim_T by TbUtil
+QA :INFO  -  Switch On                 tpc_T by TbUtil
+QA :INFO  -  Switch On                TbUtil by StEvent
+QA :INFO  -  Switch On                   Stu by StEvent
+QA :INFO  -  Switch On                 StDbT by dbutil
+QA :INFO  -  Switch On                    db by detDb
+QA :INFO  -  Switch On                 detDb by dbutil
+QA :INFO  -  Switch On                dbutil by StEvent
+QA :INFO  -  Switch On                TRGDef by StEvent
+QA :INFO  -  Switch On               StEvent by MuDSTDeps
+QA :INFO  -  Switch On               TofUtil by MuDSTDeps
+QA :INFO  -  Switch On              BTofUtil by MuDSTDeps
+QA :INFO  -  Switch On                 emc_T by EmcUtil
+QA :INFO  -  Switch On                 geomT by EmcUtil
+QA :INFO  -  Switch On               EmcUtil by MuDSTDeps
+QA :INFO  -  Switch On               PmdUtil by MuDSTDeps
+QA :INFO  -  Switch On             MuDSTDeps by PicoDeps
+QA :INFO  -  Switch On              PicoDeps by RpicoDST
+QA :INFO  -  Switch On              RpicoDST by Chain
+QA :INFO  -  Switch On              KFPInter by Chain
+QA :INFO  -  Switch On             NoDefault by Chain
+QA :INFO  -  Switch On                 quiet by Chain
+QA :INFO  -  Switch On                ry2016 by Chain
+QA :INFO  -  Switch On                   Agi by Default Geometry
+QA :INFO  - ==================                   Agi	is ON 	: Alias VmcGeometry to AgiGeometry (gstar original geometry)
+QA :INFO  - ==================            KFParticle	is ON 	: Load KFParticle
+QA :INFO  - ==================                 StDbT	is ON 	: Load StDb_Tables
+QA :INFO  - ==================                 emc_T	is ON 	: Load emc_Tables
+QA :INFO  - ==================                 geomT	is ON 	: Load geometry_Tables
+QA :INFO  - ==================                 globT	is ON 	: Load global_Tables
+QA :INFO  - ==================                 sim_T	is ON 	: Load sim_Tables
+QA :INFO  - ==================                 tpc_T	is ON 	: WARNING *** Option is OBSOLETE ***
+QA :INFO  - ==================                 mysql	is ON 	: MySQL
+QA :INFO  - ==================                   SCL	is ON 	: Load StarClassLibrary
+QA :INFO  - ==================             StBichsel	is ON 	: Load Bichsel model for dE/dx
+QA :INFO  - ==================               StEvent	is ON 	: Load StEvent
+QA :INFO  - ==================                TbUtil	is ON 	: Load StTableUtilities
+QA :INFO  - ==================               TofUtil	is ON 	: Load StTofUtil
+QA :INFO  - ==================              BTofUtil	is ON 	: Load StBTofUtil
+QA :INFO  - ==================                   Stu	is ON 	: Load StEventUtilities
+QA :INFO  - ==================               EmcUtil	is ON 	: Load StEmcUtil
+QA :INFO  - ==================               PmdUtil	is ON 	: Load StPmdUtil
+QA :INFO  - ==================             MuDSTDeps	is ON 	: Load MuDST misc. dependencies (all)
+QA :INFO  - ==================              PicoDeps	is ON 	: Load PicoDST dependences
+QA :INFO  - ==================              RpicoDST	is ON 	: read PicoDST
+QA :INFO  - ==================                    db	is ON 	: 
+QA :INFO  - ==================                 detDb	is ON 	: Load StDetectorDbMaker library
+QA :INFO  - ==================                dbutil	is ON 	: Load StDbUtilities
+QA :INFO  - ==================                TRGDef	is ON 	: Load StTriggerData
+QA :INFO  - ==================              KFPInter	is ON 	: STAR KFParticle interface
+QA :INFO  - ==================             NoDefault	is ON 	: No Default consistency check
+QA :INFO  - ==================                 quiet	is ON 	: make chain quiet
+QA :INFO  - ==================                ry2016	is ON 	: 
+QA :INFO  - Process [First=     1/Last=    -1/Total=    -1] Events
+QA :INFO  - Library libmysqlclient         [          mysql] (/usr/lib64/mysql/libmysqlclient.so)	is loaded
+QA :INFO  - Library libStTpcDb             [        StEvent] (/gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/.sl73_x8664_gcc485/LIB/libStTpcDb.so)	is loaded
+QA :INFO  - Library libStBTofUtil          [       BTofUtil] (/gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/.sl73_x8664_gcc485/LIB/libStBTofUtil.so)	is loaded
+QA :INFO  - Library libStPicoEvent         [       PicoDeps] (/gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/.sl73_x8664_gcc485/LIB/libStPicoEvent.so)	is loaded
+QA :INFO  - Library libStPicoDstMaker      [       PicoDeps] (/gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/.sl73_x8664_gcc485/LIB/libStPicoDstMaker.so)	is loaded
+QA :INFO  - Library libStDbBroker          [             db] (/gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/.sl73_x8664_gcc485/LIB/libStDbBroker.so)	is loaded
+QA :INFO  - Library libSt_db_Maker         [             db] (/gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/.sl73_x8664_gcc485/LIB/libSt_db_Maker.so)	is loaded
+QA :INFO  - Library libStDetectorDbMaker   [          detDb] (/gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/.sl73_x8664_gcc485/LIB/libStDetectorDbMaker.so)	is loaded
+QA :INFO  - Library libStDbUtilities       [         dbutil] (/gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/.sl73_x8664_gcc485/LIB/libStDbUtilities.so)	is loaded
+QA :INFO  - Library libKFParticlePerformance [       KFPInter] (/direct/star+u/svianping/STAR_Files/KFParticle4Lambda/.sl73_x8664_gcc485/LIB/libKFParticlePerformance.so)	is loaded
+QA :INFO  - Library libStKFParticleAnalysisMaker [       KFPInter] (/direct/star+u/svianping/STAR_Files/KFParticle4Lambda/.sl73_x8664_gcc485/LIB/libStKFParticleAnalysisMaker.so)	is loaded
+QA :INFO  - Input file name = ./datalist//200.0GeV_Run15/200.0.list.999999
+BFC:INFO  - StFile::AddFile : *** IGNORED *** File ./datalist//200.0GeV_Run15/200.0.list.999999 has wrong extention 
+
+QA :INFO  - Output root file name 200.0.999999.root
+QA :INFO  - ProcessLine:new StPicoDstMaker(2,"./datalist//200.0GeV_Run15/200.0.list.999999")
+(class StPicoDstMaker*)0x9dd8530
+BFC:INFO  - Using DB flavors: ofl+TFG
+QA :INFO  - QAInfo:StBFChain            built Mar 14 2022 19:11:02 from Tag $Name:  $ $Id: StBFChain.h,v 1.59 2019/11/19 17:26:17 jeromel Exp $ 
+QA :INFO  - QAInfo:StPicoDstMaker       built Jun  9 2021 13:05:13 from Tag $Name:  $ $Id: StPicoDstMaker.h,v 1.30 2021/02/23 17:27:01 gnigmat Exp $ 
+QA :INFO  - QAInfo:St_db_Maker          built Jun  9 2021 13:53:26 from Tag $Name:  $ $Id: St_db_Maker.h,v 1.46 2015/05/05 21:05:52 dmitry Exp $ 
+QA :INFO  - QAInfo:StDetectorDbMaker    built Jun  9 2021 11:58:34 from Tag $Name:  $ $Id: StDetectorDbMaker.h,v 1.5 2015/12/23 23:34:09 fisyak Exp $ 
+QA :INFO  - +++ Setting attribute .gopt. = 
+QA :INFO  -  StBFChain::bfc
+QA :INFO  -    StPicoDstMaker::PicoDst
+QA :INFO  -    St_db_Maker::db
+QA :INFO  -    StDetectorDbMaker::detDb
+BFC:INFO  - StBFChain::Init : Time=Sun Apr 21 02:39:42 2024 Cwd=/direct/star+u/svianping/STAR_Files/KFParticle4Lambda
+QA :INFO  - blacklist tpc
+QA :INFO  - blacklist svt
+QA :INFO  - blacklist ssd
+QA :INFO  - blacklist sst
+QA :INFO  - blacklist pxl
+QA :INFO  - blacklist ist
+QA :INFO  - blacklist fms
+QA :INFO  - blacklist eemc
+StChain:DEBUG - *** Call << StPicoDstMaker:Init() ***
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125014/st_physics_16125014_raw_4500016.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125035/st_physics_adc_16125035_raw_2500008.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125035/st_physics_16125035_raw_5500017.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125035/st_physics_adc_16125035_raw_4000005.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125039/st_physics_16125039_raw_1500010.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125039/st_physics_16125039_raw_1000013.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/135/16135043/st_physics_16135043_raw_5500030.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/137/16137039/st_physics_16137039_raw_4500055.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/153/16153011/st_physics_adc_16153011_raw_5000010.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/156/16156043/st_physics_adc_16156043_raw_1000036.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/158/16158051/st_physics_16158051_raw_4000019.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125014/st_physics_16125014_raw_4500016.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125035/st_physics_adc_16125035_raw_2500008.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125035/st_physics_16125035_raw_5500017.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125035/st_physics_adc_16125035_raw_4000005.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125039/st_physics_16125039_raw_1500010.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/125/16125039/st_physics_16125039_raw_1000013.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/135/16135043/st_physics_16135043_raw_5500030.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/137/16137039/st_physics_16137039_raw_4500055.picoDst.root
+StChain:ERROR - TNetXNGFile::Open : [ERROR] Server responded with an error: [3011] No servers are available to read the file.
+
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/153/16153011/st_physics_adc_16153011_raw_5000010.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/156/16156043/st_physics_adc_16156043_raw_1000036.picoDst.root
+StChain:INFO  -  Read in picoDst file root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_pAu200_2015/ReversedFullField/P16id.SL20a/2015/158/16158051/st_physics_16158051_raw_4000019.picoDst.root
+StChain:INFO  -  Total 22 files have been read in. 
+StChain:WARN  - setBranchAddress: Branch name McVertex does not exist!
+StChain:WARN  - setBranchAddress: Branch name McTrack does not exist!
+StChain:DEBUG - *** Call << St_db_Maker:Init() ***
+StChain:INFO  - St_db_Maker::OpenMySQL : Block domain eemc
+StChain:INFO  - St_db_Maker::OpenMySQL : Block domain fms
+StChain:INFO  - St_db_Maker::OpenMySQL : Block domain ist
+StChain:INFO  - St_db_Maker::OpenMySQL : Block domain pxl
+StChain:INFO  - St_db_Maker::OpenMySQL : Block domain sst
+StChain:INFO  - St_db_Maker::OpenMySQL : Block domain ssd
+StChain:INFO  - St_db_Maker::OpenMySQL : Block domain svt
+StChain:INFO  - St_db_Maker::OpenMySQL : Block domain tpc
+StChain:INFO  - StDbManagerImpl::lookUpServers(): config file name is /gpfs01/star/subsys-tpc/fisyak/STAR/packages/conf/dbLoadBalancerLocalConfig_BNL.xml
+There is no 1  /star/u/svianping/dbServers.xml
+ looking at 2 /gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/StDb/servers/dbServers.xml
+DB OVERRIDE default user with: svianping
+StChain:INFO  - StDbManagerImpl::lookUpServer() line=711 
+******** Order of Files searched for dbServers ********* 
+  3. /gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/StDb/servers/dbServers.xml
+********************************************************
+
+StHyperCacheManager: reading cache config from /gpfs01/star/subsys-tpc/fisyak/STAR/packages/conf/hyperconfig.json
+StChain:INFO  - StDbLib: db server found in 3 iterations
+StChain:INFO  - MysqlDb::Connect: Load balancer took 0 ms, will use star-db08.rcf.bnl.gov:3316
+StChain:INFO  - Ssl_cipher = AES128-SHA
+StChain:INFO  - MysqlDb::Connect(host,user,pw,database,port) line=527 Server Connecting: DB=StarDb  Host=star-db08.rcf.bnl.gov:3316
+ --> Connection Time=0.10378 sec    MysqlVersion=5.7.24
+StChain:WARN  - StDbManagerImpl::getDbDomain(domainName) line=1061 Adding New dbDomain= fst
+StChain:WARN  - StDbManagerImpl::getDbDomain(domainName) line=1061 Adding New dbDomain= ftt
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table rhicf/rhicfBarPos..rhicfBarPos
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table etof/etofAlign..etofAlign
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table etof/etofModCounter..etofModCounter
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table ftt/fttFobToHV..fttFobToHV
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table ftt/fttFobToStation..fttFobToStation
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table ftt/fttHardwareMap..fttHardwareMap
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table rhicf/rhicfPedestalF..rhicfPedestalF
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table rhicf/rhicfPhotonLeakageIn..rhicfPhotonLeakageIn
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table rhicf/rhicfPhotonLeakageOut..rhicfPhotonLeakageOut
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table rhicf/rhicfNeutronLeakageOut..rhicfNeutronLeakageOut
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table rhicf/rhicfCrossTalk..rhicfCrossTalk
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fcs/fcsEcalGainOnline..fcsEcalGainOnline
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fcs/fcsHcalGainOnline..fcsHcalGainOnline
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fcs/fcsPresThreshold..fcsPresThreshold
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fst/fstGain..fstGain
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fst/fstPedNoise..fstPedNoise
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fst/fstControl..fstControl
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fst/fstMapping..fstMapping
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fst/fstChipConfig..fstChipConfig
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table fst/fstSimPar..fstSimPar
+StChain:INFO  - St_db_Maker::OpenMySQL : Unknown table ftt/fttDataWindows..fttDataWindows
+StChain:DEBUG - *** Call << StDetectorDbMaker:Init() ***
+StChain:DEBUG - *** Call << StKFParticleAnalysisMaker:Init() ***
+output_999999.root
+current job id: 999999
+Run list :./datalist//runList/run15List200.0.list loaded. 
+Total    :24 runs. 
+badrun list :./datalist//badList/badrun15List200.0.list loaded.
+Total       :0 bad runs. 
+36 124 160 36 1
+-----------------------------------------
+------- histograms & tree claimed -------
+-----------------------------------------
+StRefMultCorr::readHeaderFile  [refmult] Correction parameters and centrality definitions have been successfully read.
+read in nBadRun_refmult_2010: 717
+read in nBadRun_refmult_2011: 134
+read in nBadRun_refmult_2017: 24
+read in nBadRun_refmult_2018: 86
+StRefMultCorr::readHeaderFile  [refmult2] Correction parameters and centrality definitions have been successfully read.
+read in nBadRun_refmult_2010: 717
+read in nBadRun_refmult_2011: 134
+read in nBadRun_refmult_2017: 24
+read in nBadRun_refmult_2018: 86
+StRefMultCorr::readHeaderFile  [refmult3] Correction parameters and centrality definitions have been successfully read.
+read in nBadRun_refmult_2010: 717
+read in nBadRun_refmult_2011: 134
+read in nBadRun_refmult_2017: 24
+read in nBadRun_refmult_2018: 86
+StRefMultCorr::readHeaderFile  [grefmult] Correction parameters and centrality definitions have been successfully read.
+read in nBadRun_refmult_2010: 717
+read in nBadRun_refmult_2011: 134
+read in nBadRun_refmult_2017: 24
+read in nBadRun_refmult_2018: 86
+StRefMultCorr::readBadRunsFromHeaderFile  Bad runs for year 2010, 2011, 2017 and 2018 have been read.
+-----------------------------------
+------- user's files loaded -------
+-----------------------------------
+chain->Init();
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to Event
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to Track
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to EmcTrigger
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to MtdTrigger
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to BTowHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to BTofHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to MtdHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to BbcHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to EpdHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to FmsHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to EmcPidTraits
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to BTofPidTraits
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to MtdPidTraits
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to TrackCovMatrix
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to BEmcSmdEHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to BEmcSmdPHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to ETofHit
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to ETofPidTraits
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to McVertex
+BFC:INFO  - StPicoDstMaker::SetStatus 1 to McTrack
+BFC:WARN  - setBranchAddress: Branch name McVertex does not exist!
+BFC:WARN  - setBranchAddress: Branch name McTrack does not exist!
+182026 events in chain 182026 will be read.
+StChain:INFO  -  +++ New RunNumber found=-1 (previous = -3)
+StChain:INFO  - *********** Event Info **********************
+StChain:INFO  - 	Run: 	   -1  Event    -1  TimeStamp 20330101.     0  Bunch 0:0
+StChain:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+StChain:INFO  - *********************************************
+St_db_Maker:INFO  -  +++ New RunNumber found=16125014 (previous = -3)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16125014  Event 1098584  TimeStamp 20150505.131155  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+StKFParticleAnalysisMaker:INFO  - dEdxParameterization::GetFile : File P10T.root has been found as /gpfs01/star/subsys-tpc/fisyak/STAR/packages/TFG21g/StarDb/dEdxModel/P10T.root
+	i = 	0	fnBins[i] = 	101	fbinW[i] = 	0.05
+	i = 	1	fnBins[i] = 	11	fbinW[i] = 	0.33
+	i = 	2	fnBins[i] = 	51	fbinW[i] = 	0.2
+
+== Event 100 finish == 0min 1s: 0.01s/event
+
+== Event 200 finish == 0min 1s: 0.005s/event
+
+== Event 300 finish == 0min 2s: 0.00666667s/event
+
+== Event 400 finish == 0min 2s: 0.005s/event
+
+== Event 500 finish == 0min 2s: 0.004s/event
+
+== Event 600 finish == 0min 2s: 0.00333333s/event
+
+== Event 700 finish == 0min 3s: 0.00428571s/event
+
+== Event 800 finish == 0min 3s: 0.00375s/event
+
+== Event 900 finish == 0min 3s: 0.00333333s/event
+
+== Event 1000 finish == 0min 4s: 0.004s/event
+
+== Event 1100 finish == 0min 4s: 0.00363636s/event
+
+== Event 1200 finish == 0min 4s: 0.00333333s/event
+
+== Event 1300 finish == 0min 4s: 0.00307692s/event
+
+== Event 1400 finish == 0min 5s: 0.00357143s/event
+
+== Event 1500 finish == 0min 5s: 0.00333333s/event
+
+== Event 1600 finish == 0min 5s: 0.003125s/event
+
+== Event 1700 finish == 0min 5s: 0.00294118s/event
+
+== Event 1800 finish == 0min 5s: 0.00277778s/event
+
+== Event 1900 finish == 0min 6s: 0.00315789s/event
+
+== Event 2000 finish == 0min 6s: 0.003s/event
+
+== Event 2100 finish == 0min 6s: 0.00285714s/event
+
+== Event 2200 finish == 0min 7s: 0.00318182s/event
+
+== Event 2300 finish == 0min 7s: 0.00304348s/event
+
+== Event 2400 finish == 0min 7s: 0.00291667s/event
+
+== Event 2500 finish == 0min 8s: 0.0032s/event
+
+== Event 2600 finish == 0min 8s: 0.00307692s/event
+
+== Event 2700 finish == 0min 8s: 0.00296296s/event
+
+== Event 2800 finish == 0min 8s: 0.00285714s/event
+
+== Event 2900 finish == 0min 9s: 0.00310345s/event
+
+== Event 3000 finish == 0min 9s: 0.003s/event
+
+== Event 3100 finish == 0min 9s: 0.00290323s/event
+
+== Event 3200 finish == 0min 10s: 0.003125s/event
+
+== Event 3300 finish == 0min 10s: 0.0030303s/event
+
+== Event 3400 finish == 0min 10s: 0.00294118s/event
+
+== Event 3500 finish == 0min 10s: 0.00285714s/event
+
+== Event 3600 finish == 0min 11s: 0.00305556s/event
+
+== Event 3700 finish == 0min 11s: 0.00297297s/event
+
+== Event 3800 finish == 0min 12s: 0.00315789s/event
+
+== Event 3900 finish == 0min 12s: 0.00307692s/event
+
+== Event 4000 finish == 0min 12s: 0.003s/event
+
+== Event 4100 finish == 0min 12s: 0.00292683s/event
+
+== Event 4200 finish == 0min 13s: 0.00309524s/event
+
+== Event 4300 finish == 0min 13s: 0.00302326s/event
+
+== Event 4400 finish == 0min 13s: 0.00295455s/event
+
+== Event 4500 finish == 0min 14s: 0.00311111s/event
+
+== Event 4600 finish == 0min 14s: 0.00304348s/event
+
+== Event 4700 finish == 0min 14s: 0.00297872s/event
+
+== Event 4800 finish == 0min 14s: 0.00291667s/event
+
+== Event 4900 finish == 0min 15s: 0.00306122s/event
+
+== Event 5000 finish == 0min 16s: 0.0032s/event
+
+== Event 5100 finish == 0min 16s: 0.00313725s/event
+
+== Event 5200 finish == 0min 16s: 0.00307692s/event
+
+== Event 5300 finish == 0min 16s: 0.00301887s/event
+
+== Event 5400 finish == 0min 17s: 0.00314815s/event
+
+== Event 5500 finish == 0min 17s: 0.00309091s/event
+
+== Event 5600 finish == 0min 17s: 0.00303571s/event
+
+== Event 5700 finish == 0min 18s: 0.00315789s/event
+
+== Event 5800 finish == 0min 18s: 0.00310345s/event
+
+== Event 5900 finish == 0min 18s: 0.00305085s/event
+
+== Event 6000 finish == 0min 18s: 0.003s/event
+
+== Event 6100 finish == 0min 19s: 0.00311475s/event
+
+== Event 6200 finish == 0min 19s: 0.00306452s/event
+
+== Event 6300 finish == 0min 19s: 0.00301587s/event
+
+== Event 6400 finish == 0min 20s: 0.003125s/event
+
+== Event 6500 finish == 0min 20s: 0.00307692s/event
+
+== Event 6600 finish == 0min 20s: 0.0030303s/event
+
+== Event 6700 finish == 0min 21s: 0.00313433s/event
+
+== Event 6800 finish == 0min 21s: 0.00308824s/event
+
+== Event 6900 finish == 0min 21s: 0.00304348s/event
+
+== Event 7000 finish == 0min 22s: 0.00314286s/event
+
+== Event 7100 finish == 0min 22s: 0.00309859s/event
+
+== Event 7200 finish == 0min 22s: 0.00305556s/event
+
+== Event 7300 finish == 0min 23s: 0.00315068s/event
+
+== Event 7400 finish == 0min 23s: 0.00310811s/event
+
+== Event 7500 finish == 0min 23s: 0.00306667s/event
+
+== Event 7600 finish == 0min 24s: 0.00315789s/event
+
+== Event 7700 finish == 0min 24s: 0.00311688s/event
+
+== Event 7800 finish == 0min 24s: 0.00307692s/event
+
+== Event 7900 finish == 0min 25s: 0.00316456s/event
+
+== Event 8000 finish == 0min 25s: 0.003125s/event
+
+== Event 8100 finish == 0min 25s: 0.00308642s/event
+
+== Event 8200 finish == 0min 26s: 0.00317073s/event
+
+== Event 8300 finish == 0min 26s: 0.00313253s/event
+
+== Event 8400 finish == 0min 26s: 0.00309524s/event
+
+== Event 8500 finish == 0min 27s: 0.00317647s/event
+
+== Event 8600 finish == 0min 27s: 0.00313953s/event
+
+== Event 8700 finish == 0min 27s: 0.00310345s/event
+
+== Event 8800 finish == 0min 27s: 0.00306818s/event
+
+== Event 8900 finish == 0min 28s: 0.00314607s/event
+
+== Event 9000 finish == 0min 28s: 0.00311111s/event
+
+== Event 9100 finish == 0min 28s: 0.00307692s/event
+
+== Event 9200 finish == 0min 29s: 0.00315217s/event
+
+== Event 9300 finish == 0min 29s: 0.00311828s/event
+
+== Event 9400 finish == 0min 29s: 0.00308511s/event
+
+== Event 9500 finish == 0min 29s: 0.00305263s/event
+
+== Event 9600 finish == 0min 30s: 0.003125s/event
+
+== Event 9700 finish == 0min 30s: 0.00309278s/event
+
+== Event 9800 finish == 0min 30s: 0.00306122s/event
+
+== Event 9900 finish == 0min 30s: 0.0030303s/event
+
+== Event 10000 finish == 0min 31s: 0.0031s/event
+
+== Event 10100 finish == 0min 31s: 0.00306931s/event
+
+== Event 10200 finish == 0min 31s: 0.00303922s/event
+
+== Event 10300 finish == 0min 32s: 0.0031068s/event
+
+== Event 10400 finish == 0min 32s: 0.00307692s/event
+
+== Event 10500 finish == 0min 32s: 0.00304762s/event
+
+== Event 10600 finish == 0min 33s: 0.00311321s/event
+
+== Event 10700 finish == 0min 33s: 0.00308411s/event
+
+== Event 10800 finish == 0min 33s: 0.00305556s/event
+
+== Event 10900 finish == 0min 34s: 0.00311927s/event
+
+== Event 11000 finish == 0min 34s: 0.00309091s/event
+
+== Event 11100 finish == 0min 34s: 0.00306306s/event
+
+== Event 11200 finish == 0min 35s: 0.003125s/event
+
+== Event 11300 finish == 0min 35s: 0.00309735s/event
+
+== Event 11400 finish == 0min 35s: 0.00307018s/event
+
+== Event 11500 finish == 0min 36s: 0.00313043s/event
+
+== Event 11600 finish == 0min 36s: 0.00310345s/event
+
+== Event 11700 finish == 0min 36s: 0.00307692s/event
+
+== Event 11800 finish == 0min 37s: 0.00313559s/event
+
+== Event 11900 finish == 0min 37s: 0.00310924s/event
+
+== Event 12000 finish == 0min 37s: 0.00308333s/event
+
+== Event 12100 finish == 0min 38s: 0.0031405s/event
+
+== Event 12200 finish == 0min 38s: 0.00311475s/event
+
+== Event 12300 finish == 0min 38s: 0.00308943s/event
+
+== Event 12400 finish == 0min 38s: 0.00306452s/event
+
+== Event 12500 finish == 0min 39s: 0.00312s/event
+
+== Event 12600 finish == 0min 39s: 0.00309524s/event
+
+== Event 12700 finish == 0min 39s: 0.00307087s/event
+
+== Event 12800 finish == 0min 40s: 0.003125s/event
+
+== Event 12900 finish == 0min 40s: 0.00310078s/event
+
+== Event 13000 finish == 0min 40s: 0.00307692s/event
+
+== Event 13100 finish == 0min 41s: 0.00312977s/event
+
+== Event 13200 finish == 0min 41s: 0.00310606s/event
+
+== Event 13300 finish == 0min 41s: 0.00308271s/event
+
+== Event 13400 finish == 0min 41s: 0.0030597s/event
+
+== Event 13500 finish == 0min 42s: 0.00311111s/event
+
+== Event 13600 finish == 0min 42s: 0.00308824s/event
+
+== Event 13700 finish == 0min 42s: 0.00306569s/event
+
+== Event 13800 finish == 0min 42s: 0.00304348s/event
+
+== Event 13900 finish == 0min 43s: 0.00309353s/event
+
+== Event 14000 finish == 0min 43s: 0.00307143s/event
+
+== Event 14100 finish == 0min 44s: 0.00312057s/event
+
+== Event 14200 finish == 0min 44s: 0.00309859s/event
+
+== Event 14300 finish == 0min 44s: 0.00307692s/event
+
+== Event 14400 finish == 0min 44s: 0.00305556s/event
+
+== Event 14500 finish == 0min 44s: 0.00303448s/event
+
+== Event 14600 finish == 0min 45s: 0.00308219s/event
+
+== Event 14700 finish == 0min 45s: 0.00306122s/event
+
+== Event 14800 finish == 0min 45s: 0.00304054s/event
+
+== Event 14900 finish == 0min 45s: 0.00302013s/event
+
+== Event 15000 finish == 0min 46s: 0.00306667s/event
+
+== Event 15100 finish == 0min 46s: 0.00304636s/event
+
+== Event 15200 finish == 0min 47s: 0.00309211s/event
+
+== Event 15300 finish == 0min 47s: 0.0030719s/event
+
+== Event 15400 finish == 0min 47s: 0.00305195s/event
+
+== Event 15500 finish == 0min 47s: 0.00303226s/event
+
+== Event 15600 finish == 0min 48s: 0.00307692s/event
+
+== Event 15700 finish == 0min 48s: 0.00305732s/event
+
+== Event 15800 finish == 0min 49s: 0.00310127s/event
+
+== Event 15900 finish == 0min 49s: 0.00308176s/event
+
+== Event 16000 finish == 0min 49s: 0.0030625s/event
+
+== Event 16100 finish == 0min 50s: 0.00310559s/event
+
+== Event 16200 finish == 0min 50s: 0.00308642s/event
+
+== Event 16300 finish == 0min 50s: 0.00306748s/event
+
+== Event 16400 finish == 0min 51s: 0.00310976s/event
+
+== Event 16500 finish == 0min 51s: 0.00309091s/event
+
+== Event 16600 finish == 0min 51s: 0.00307229s/event
+
+== Event 16700 finish == 0min 51s: 0.00305389s/event
+
+== Event 16800 finish == 0min 52s: 0.00309524s/event
+
+== Event 16900 finish == 0min 52s: 0.00307692s/event
+
+== Event 17000 finish == 0min 52s: 0.00305882s/event
+
+== Event 17100 finish == 0min 53s: 0.00309942s/event
+
+== Event 17200 finish == 0min 53s: 0.0030814s/event
+
+== Event 17300 finish == 0min 53s: 0.00306358s/event
+
+== Event 17400 finish == 0min 53s: 0.00304598s/event
+
+== Event 17500 finish == 0min 54s: 0.00308571s/event
+
+== Event 17600 finish == 0min 54s: 0.00306818s/event
+
+== Event 17700 finish == 0min 54s: 0.00305085s/event
+
+== Event 17800 finish == 0min 55s: 0.00308989s/event
+
+== Event 17900 finish == 0min 55s: 0.00307263s/event
+
+== Event 18000 finish == 0min 55s: 0.00305556s/event
+
+== Event 18100 finish == 0min 56s: 0.00309392s/event
+
+== Event 18200 finish == 0min 56s: 0.00307692s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16125035 (previous = 16125014)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16125035  Event  2120  TimeStamp 20150505.200951  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 18300 finish == 0min 56s: 0.00306011s/event
+
+== Event 18400 finish == 0min 57s: 0.00309783s/event
+
+== Event 18500 finish == 0min 57s: 0.00308108s/event
+
+== Event 18600 finish == 0min 57s: 0.00306452s/event
+
+== Event 18700 finish == 0min 57s: 0.00304813s/event
+
+== Event 18800 finish == 0min 58s: 0.00308511s/event
+
+== Event 18900 finish == 0min 58s: 0.00306878s/event
+
+== Event 19000 finish == 0min 58s: 0.00305263s/event
+
+== Event 19100 finish == 0min 58s: 0.00303665s/event
+
+== Event 19200 finish == 0min 58s: 0.00302083s/event
+
+== Event 19300 finish == 0min 59s: 0.00305699s/event
+
+== Event 19400 finish == 0min 59s: 0.00304124s/event
+
+== Event 19500 finish == 0min 59s: 0.00302564s/event
+
+== Event 19600 finish == 0min 59s: 0.0030102s/event
+
+== Event 19700 finish == 0min 59s: 0.00299492s/event
+
+== Event 19800 finish == 0min 59s: 0.0029798s/event
+
+== Event 19900 finish == 1min 0s: 0.00301508s/event
+
+== Event 20000 finish == 1min 0s: 0.003s/event
+
+== Event 20100 finish == 1min 0s: 0.00298507s/event
+
+== Event 20200 finish == 1min 0s: 0.0029703s/event
+
+== Event 20300 finish == 1min 0s: 0.00295567s/event
+
+== Event 20400 finish == 1min 0s: 0.00294118s/event
+
+== Event 20500 finish == 1min 0s: 0.00292683s/event
+
+== Event 20600 finish == 1min 1s: 0.00296117s/event
+
+== Event 20700 finish == 1min 1s: 0.00294686s/event
+
+== Event 20800 finish == 1min 1s: 0.00293269s/event
+
+== Event 20900 finish == 1min 1s: 0.00291866s/event
+
+== Event 21000 finish == 1min 1s: 0.00290476s/event
+
+== Event 21100 finish == 1min 2s: 0.00293839s/event
+
+== Event 21200 finish == 1min 2s: 0.00292453s/event
+
+== Event 21300 finish == 1min 2s: 0.0029108s/event
+
+== Event 21400 finish == 1min 2s: 0.0028972s/event
+
+== Event 21500 finish == 1min 2s: 0.00288372s/event
+
+== Event 21600 finish == 1min 2s: 0.00287037s/event
+
+== Event 21700 finish == 1min 3s: 0.00290323s/event
+
+== Event 21800 finish == 1min 3s: 0.00288991s/event
+
+== Event 21900 finish == 1min 3s: 0.00287671s/event
+
+== Event 22000 finish == 1min 3s: 0.00286364s/event
+
+== Event 22100 finish == 1min 3s: 0.00285068s/event
+
+== Event 22200 finish == 1min 3s: 0.00283784s/event
+
+== Event 22300 finish == 1min 4s: 0.00286996s/event
+
+== Event 22400 finish == 1min 4s: 0.00285714s/event
+
+== Event 22500 finish == 1min 4s: 0.00284444s/event
+
+== Event 22600 finish == 1min 4s: 0.00283186s/event
+
+== Event 22700 finish == 1min 5s: 0.00286344s/event
+
+== Event 22800 finish == 1min 5s: 0.00285088s/event
+
+== Event 22900 finish == 1min 5s: 0.00283843s/event
+
+== Event 23000 finish == 1min 5s: 0.00282609s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16125039 (previous = 16125035)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16125039  Event 540636  TimeStamp 20150505.211325  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 23100 finish == 1min 6s: 0.00285714s/event
+
+== Event 23200 finish == 1min 6s: 0.00284483s/event
+
+== Event 23300 finish == 1min 6s: 0.00283262s/event
+
+== Event 23400 finish == 1min 6s: 0.00282051s/event
+
+== Event 23500 finish == 1min 6s: 0.00280851s/event
+
+== Event 23600 finish == 1min 6s: 0.00279661s/event
+
+== Event 23700 finish == 1min 7s: 0.002827s/event
+
+== Event 23800 finish == 1min 7s: 0.00281513s/event
+
+== Event 23900 finish == 1min 7s: 0.00280335s/event
+
+== Event 24000 finish == 1min 7s: 0.00279167s/event
+
+== Event 24100 finish == 1min 7s: 0.00278008s/event
+
+== Event 24200 finish == 1min 7s: 0.0027686s/event
+
+== Event 24300 finish == 1min 8s: 0.00279835s/event
+
+== Event 24400 finish == 1min 8s: 0.00278689s/event
+
+== Event 24500 finish == 1min 8s: 0.00277551s/event
+
+== Event 24600 finish == 1min 8s: 0.00276423s/event
+
+== Event 24700 finish == 1min 8s: 0.00275304s/event
+
+== Event 24800 finish == 1min 8s: 0.00274194s/event
+
+== Event 24900 finish == 1min 8s: 0.00273092s/event
+
+== Event 25000 finish == 1min 9s: 0.00276s/event
+
+== Event 25100 finish == 1min 9s: 0.002749s/event
+
+== Event 25200 finish == 1min 9s: 0.0027381s/event
+
+== Event 25300 finish == 1min 9s: 0.00272727s/event
+
+== Event 25400 finish == 1min 9s: 0.00271654s/event
+
+== Event 25500 finish == 1min 9s: 0.00270588s/event
+
+== Event 25600 finish == 1min 10s: 0.00273437s/event
+
+== Event 25700 finish == 1min 10s: 0.00272374s/event
+
+== Event 25800 finish == 1min 10s: 0.00271318s/event
+
+== Event 25900 finish == 1min 10s: 0.0027027s/event
+
+== Event 26000 finish == 1min 10s: 0.00269231s/event
+
+== Event 26100 finish == 1min 10s: 0.00268199s/event
+
+== Event 26200 finish == 1min 11s: 0.00270992s/event
+
+== Event 26300 finish == 1min 11s: 0.00269962s/event
+
+== Event 26400 finish == 1min 11s: 0.00268939s/event
+
+== Event 26500 finish == 1min 11s: 0.00267925s/event
+
+== Event 26600 finish == 1min 11s: 0.00266917s/event
+
+== Event 26700 finish == 1min 11s: 0.00265918s/event
+
+== Event 26800 finish == 1min 11s: 0.00264925s/event
+
+== Event 26900 finish == 1min 11s: 0.00263941s/event
+
+== Event 27000 finish == 1min 12s: 0.00266667s/event
+
+== Event 27100 finish == 1min 12s: 0.00265683s/event
+
+== Event 27200 finish == 1min 12s: 0.00264706s/event
+
+== Event 27300 finish == 1min 12s: 0.00263736s/event
+
+== Event 27400 finish == 1min 12s: 0.00262774s/event
+
+== Event 27500 finish == 1min 13s: 0.00265455s/event
+
+== Event 27600 finish == 1min 13s: 0.00264493s/event
+
+== Event 27700 finish == 1min 13s: 0.00263538s/event
+
+== Event 27800 finish == 1min 13s: 0.0026259s/event
+
+== Event 27900 finish == 1min 13s: 0.00261649s/event
+
+== Event 28000 finish == 1min 13s: 0.00260714s/event
+
+== Event 28100 finish == 1min 13s: 0.00259786s/event
+
+== Event 28200 finish == 1min 13s: 0.00258865s/event
+
+== Event 28300 finish == 1min 14s: 0.00261484s/event
+
+== Event 28400 finish == 1min 14s: 0.00260563s/event
+
+== Event 28500 finish == 1min 14s: 0.00259649s/event
+
+== Event 28600 finish == 1min 14s: 0.00258741s/event
+
+== Event 28700 finish == 1min 14s: 0.0025784s/event
+
+== Event 28800 finish == 1min 14s: 0.00256944s/event
+
+== Event 28900 finish == 1min 14s: 0.00256055s/event
+
+== Event 29000 finish == 1min 15s: 0.00258621s/event
+
+== Event 29100 finish == 1min 15s: 0.00257732s/event
+
+== Event 29200 finish == 1min 15s: 0.00256849s/event
+
+== Event 29300 finish == 1min 15s: 0.00255973s/event
+
+== Event 29400 finish == 1min 15s: 0.00255102s/event
+
+== Event 29500 finish == 1min 16s: 0.00257627s/event
+
+== Event 29600 finish == 1min 16s: 0.00256757s/event
+
+== Event 29700 finish == 1min 16s: 0.00255892s/event
+
+== Event 29800 finish == 1min 16s: 0.00255034s/event
+
+== Event 29900 finish == 1min 16s: 0.00254181s/event
+
+== Event 30000 finish == 1min 16s: 0.00253333s/event
+
+== Event 30100 finish == 1min 16s: 0.00252492s/event
+
+== Event 30200 finish == 1min 16s: 0.00251656s/event
+
+== Event 30300 finish == 1min 17s: 0.00254125s/event
+
+== Event 30400 finish == 1min 17s: 0.00253289s/event
+
+== Event 30500 finish == 1min 17s: 0.00252459s/event
+
+== Event 30600 finish == 1min 17s: 0.00251634s/event
+
+== Event 30700 finish == 1min 17s: 0.00250814s/event
+
+== Event 30800 finish == 1min 17s: 0.0025s/event
+
+== Event 30900 finish == 1min 17s: 0.00249191s/event
+
+== Event 31000 finish == 1min 18s: 0.00251613s/event
+
+== Event 31100 finish == 1min 18s: 0.00250804s/event
+
+== Event 31200 finish == 1min 18s: 0.0025s/event
+
+== Event 31300 finish == 1min 18s: 0.00249201s/event
+
+== Event 31400 finish == 1min 18s: 0.00248408s/event
+
+== Event 31500 finish == 1min 19s: 0.00250794s/event
+
+== Event 31600 finish == 1min 19s: 0.0025s/event
+
+== Event 31700 finish == 1min 19s: 0.00249211s/event
+
+== Event 31800 finish == 1min 19s: 0.00248428s/event
+
+== Event 31900 finish == 1min 19s: 0.00247649s/event
+
+== Event 32000 finish == 1min 19s: 0.00246875s/event
+
+== Event 32100 finish == 1min 19s: 0.00246106s/event
+
+== Event 32200 finish == 1min 20s: 0.00248447s/event
+
+== Event 32300 finish == 1min 20s: 0.00247678s/event
+
+== Event 32400 finish == 1min 20s: 0.00246914s/event
+
+== Event 32500 finish == 1min 20s: 0.00246154s/event
+
+== Event 32600 finish == 1min 20s: 0.00245399s/event
+
+== Event 32700 finish == 1min 20s: 0.00244648s/event
+
+== Event 32800 finish == 1min 20s: 0.00243902s/event
+
+== Event 32900 finish == 1min 20s: 0.00243161s/event
+
+== Event 33000 finish == 1min 21s: 0.00245455s/event
+
+== Event 33100 finish == 1min 21s: 0.00244713s/event
+
+== Event 33200 finish == 1min 21s: 0.00243976s/event
+
+== Event 33300 finish == 1min 21s: 0.00243243s/event
+
+== Event 33400 finish == 1min 21s: 0.00242515s/event
+
+== Event 33500 finish == 1min 22s: 0.00244776s/event
+
+== Event 33600 finish == 1min 22s: 0.00244048s/event
+
+== Event 33700 finish == 1min 22s: 0.00243323s/event
+
+== Event 33800 finish == 1min 22s: 0.00242604s/event
+
+== Event 33900 finish == 1min 22s: 0.00241888s/event
+
+== Event 34000 finish == 1min 22s: 0.00241176s/event
+
+== Event 34100 finish == 1min 22s: 0.00240469s/event
+
+== Event 34200 finish == 1min 22s: 0.00239766s/event
+
+== Event 34300 finish == 1min 23s: 0.00241983s/event
+
+== Event 34400 finish == 1min 23s: 0.00241279s/event
+
+== Event 34500 finish == 1min 23s: 0.0024058s/event
+
+== Event 34600 finish == 1min 23s: 0.00239884s/event
+
+== Event 34700 finish == 1min 23s: 0.00239193s/event
+
+== Event 34800 finish == 1min 23s: 0.00238506s/event
+
+== Event 34900 finish == 1min 23s: 0.00237822s/event
+
+== Event 35000 finish == 1min 24s: 0.0024s/event
+
+== Event 35100 finish == 1min 24s: 0.00239316s/event
+
+== Event 35200 finish == 1min 24s: 0.00238636s/event
+
+== Event 35300 finish == 1min 24s: 0.0023796s/event
+
+== Event 35400 finish == 1min 24s: 0.00237288s/event
+
+== Event 35500 finish == 1min 25s: 0.00239437s/event
+
+== Event 35600 finish == 1min 25s: 0.00238764s/event
+
+== Event 35700 finish == 1min 25s: 0.00238095s/event
+
+== Event 35800 finish == 1min 25s: 0.0023743s/event
+
+== Event 35900 finish == 1min 25s: 0.00236769s/event
+
+== Event 36000 finish == 1min 25s: 0.00236111s/event
+
+== Event 36100 finish == 1min 25s: 0.00235457s/event
+
+== Event 36200 finish == 1min 25s: 0.00234807s/event
+
+== Event 36300 finish == 1min 25s: 0.0023416s/event
+
+== Event 36400 finish == 1min 26s: 0.00236264s/event
+
+== Event 36500 finish == 1min 26s: 0.00235616s/event
+
+== Event 36600 finish == 1min 26s: 0.00234973s/event
+
+== Event 36700 finish == 1min 26s: 0.00234332s/event
+
+== Event 36800 finish == 1min 26s: 0.00233696s/event
+
+== Event 36900 finish == 1min 26s: 0.00233062s/event
+
+== Event 37000 finish == 1min 27s: 0.00235135s/event
+
+== Event 37100 finish == 1min 27s: 0.00234501s/event
+
+== Event 37200 finish == 1min 27s: 0.00233871s/event
+
+== Event 37300 finish == 1min 27s: 0.00233244s/event
+
+== Event 37400 finish == 1min 27s: 0.0023262s/event
+
+== Event 37500 finish == 1min 27s: 0.00232s/event
+
+== Event 37600 finish == 1min 28s: 0.00234043s/event
+
+== Event 37700 finish == 1min 28s: 0.00233422s/event
+
+== Event 37800 finish == 1min 28s: 0.00232804s/event
+
+== Event 37900 finish == 1min 28s: 0.0023219s/event
+
+== Event 38000 finish == 1min 28s: 0.00231579s/event
+
+== Event 38100 finish == 1min 28s: 0.00230971s/event
+
+== Event 38200 finish == 1min 28s: 0.00230366s/event
+
+== Event 38300 finish == 1min 28s: 0.00229765s/event
+
+== Event 38400 finish == 1min 28s: 0.00229167s/event
+
+== Event 38500 finish == 1min 29s: 0.00231169s/event
+
+== Event 38600 finish == 1min 29s: 0.0023057s/event
+
+== Event 38700 finish == 1min 29s: 0.00229974s/event
+
+== Event 38800 finish == 1min 29s: 0.00229381s/event
+
+== Event 38900 finish == 1min 29s: 0.00228792s/event
+
+== Event 39000 finish == 1min 30s: 0.00230769s/event
+
+== Event 39100 finish == 1min 30s: 0.00230179s/event
+
+== Event 39200 finish == 1min 30s: 0.00229592s/event
+
+== Event 39300 finish == 1min 30s: 0.00229008s/event
+
+== Event 39400 finish == 1min 30s: 0.00228426s/event
+
+== Event 39500 finish == 1min 30s: 0.00227848s/event
+
+== Event 39600 finish == 1min 31s: 0.00229798s/event
+
+== Event 39700 finish == 1min 31s: 0.00229219s/event
+
+== Event 39800 finish == 1min 31s: 0.00228643s/event
+
+== Event 39900 finish == 1min 31s: 0.0022807s/event
+
+== Event 40000 finish == 1min 31s: 0.002275s/event
+
+== Event 40100 finish == 1min 31s: 0.00226933s/event
+
+== Event 40200 finish == 1min 31s: 0.00226368s/event
+
+== Event 40300 finish == 1min 31s: 0.00225806s/event
+
+== Event 40400 finish == 1min 32s: 0.00227723s/event
+
+== Event 40500 finish == 1min 32s: 0.0022716s/event
+
+== Event 40600 finish == 1min 32s: 0.00226601s/event
+
+== Event 40700 finish == 1min 32s: 0.00226044s/event
+
+== Event 40800 finish == 1min 32s: 0.0022549s/event
+
+== Event 40900 finish == 1min 33s: 0.00227384s/event
+
+== Event 41000 finish == 1min 33s: 0.00226829s/event
+
+== Event 41100 finish == 1min 33s: 0.00226277s/event
+
+== Event 41200 finish == 1min 33s: 0.00225728s/event
+
+== Event 41300 finish == 1min 33s: 0.00225182s/event
+
+== Event 41400 finish == 1min 33s: 0.00224638s/event
+
+== Event 41500 finish == 1min 33s: 0.00224096s/event
+
+== Event 41600 finish == 1min 34s: 0.00225962s/event
+
+== Event 41700 finish == 1min 34s: 0.0022542s/event
+
+== Event 41800 finish == 1min 34s: 0.0022488s/event
+
+== Event 41900 finish == 1min 34s: 0.00224344s/event
+
+== Event 42000 finish == 1min 34s: 0.0022381s/event
+
+== Event 42100 finish == 1min 34s: 0.00223278s/event
+
+== Event 42200 finish == 1min 34s: 0.00222749s/event
+
+== Event 42300 finish == 1min 35s: 0.00224586s/event
+
+== Event 42400 finish == 1min 35s: 0.00224057s/event
+
+== Event 42500 finish == 1min 35s: 0.00223529s/event
+
+== Event 42600 finish == 1min 35s: 0.00223005s/event
+
+== Event 42700 finish == 1min 35s: 0.00222482s/event
+
+== Event 42800 finish == 1min 35s: 0.00221963s/event
+
+== Event 42900 finish == 1min 35s: 0.00221445s/event
+
+== Event 43000 finish == 1min 36s: 0.00223256s/event
+
+== Event 43100 finish == 1min 36s: 0.00222738s/event
+
+== Event 43200 finish == 1min 36s: 0.00222222s/event
+
+== Event 43300 finish == 1min 36s: 0.00221709s/event
+
+== Event 43400 finish == 1min 36s: 0.00221198s/event
+
+== Event 43500 finish == 1min 37s: 0.00222989s/event
+
+== Event 43600 finish == 1min 37s: 0.00222477s/event
+
+== Event 43700 finish == 1min 37s: 0.00221968s/event
+
+== Event 43800 finish == 1min 37s: 0.00221461s/event
+
+== Event 43900 finish == 1min 37s: 0.00220957s/event
+
+== Event 44000 finish == 1min 37s: 0.00220455s/event
+
+== Event 44100 finish == 1min 37s: 0.00219955s/event
+
+== Event 44200 finish == 1min 37s: 0.00219457s/event
+
+== Event 44300 finish == 1min 37s: 0.00218962s/event
+
+== Event 44400 finish == 1min 38s: 0.00220721s/event
+
+== Event 44500 finish == 1min 38s: 0.00220225s/event
+
+== Event 44600 finish == 1min 38s: 0.00219731s/event
+
+== Event 44700 finish == 1min 38s: 0.00219239s/event
+
+== Event 44800 finish == 1min 38s: 0.0021875s/event
+
+== Event 44900 finish == 1min 38s: 0.00218263s/event
+
+== Event 45000 finish == 1min 39s: 0.0022s/event
+
+== Event 45100 finish == 1min 39s: 0.00219512s/event
+
+== Event 45200 finish == 1min 39s: 0.00219027s/event
+
+== Event 45300 finish == 1min 39s: 0.00218543s/event
+
+== Event 45400 finish == 1min 39s: 0.00218062s/event
+
+== Event 45500 finish == 1min 39s: 0.00217582s/event
+
+== Event 45600 finish == 1min 40s: 0.00219298s/event
+
+== Event 45700 finish == 1min 40s: 0.00218818s/event
+
+== Event 45800 finish == 1min 40s: 0.00218341s/event
+
+== Event 45900 finish == 1min 40s: 0.00217865s/event
+
+== Event 46000 finish == 1min 40s: 0.00217391s/event
+
+== Event 46100 finish == 1min 40s: 0.0021692s/event
+
+== Event 46200 finish == 1min 40s: 0.0021645s/event
+
+== Event 46300 finish == 1min 41s: 0.00218143s/event
+
+== Event 46400 finish == 1min 41s: 0.00217672s/event
+
+== Event 46500 finish == 1min 41s: 0.00217204s/event
+
+== Event 46600 finish == 1min 41s: 0.00216738s/event
+
+== Event 46700 finish == 1min 41s: 0.00216274s/event
+
+== Event 46800 finish == 1min 41s: 0.00215812s/event
+
+== Event 46900 finish == 1min 41s: 0.00215352s/event
+
+== Event 47000 finish == 1min 41s: 0.00214894s/event
+
+== Event 47100 finish == 1min 42s: 0.00216561s/event
+
+== Event 47200 finish == 1min 42s: 0.00216102s/event
+
+== Event 47300 finish == 1min 42s: 0.00215645s/event
+
+== Event 47400 finish == 1min 42s: 0.0021519s/event
+
+== Event 47500 finish == 1min 42s: 0.00214737s/event
+
+== Event 47600 finish == 1min 43s: 0.00216387s/event
+
+== Event 47700 finish == 1min 43s: 0.00215933s/event
+
+== Event 47800 finish == 1min 43s: 0.00215481s/event
+
+== Event 47900 finish == 1min 43s: 0.00215031s/event
+
+== Event 48000 finish == 1min 43s: 0.00214583s/event
+
+== Event 48100 finish == 1min 43s: 0.00214137s/event
+
+== Event 48200 finish == 1min 43s: 0.00213693s/event
+
+== Event 48300 finish == 1min 43s: 0.00213251s/event
+
+== Event 48400 finish == 1min 44s: 0.00214876s/event
+
+== Event 48500 finish == 1min 44s: 0.00214433s/event
+
+== Event 48600 finish == 1min 44s: 0.00213992s/event
+
+== Event 48700 finish == 1min 44s: 0.00213552s/event
+
+== Event 48800 finish == 1min 44s: 0.00213115s/event
+
+== Event 48900 finish == 1min 44s: 0.00212679s/event
+
+== Event 49000 finish == 1min 44s: 0.00212245s/event
+
+== Event 49100 finish == 1min 44s: 0.00211813s/event
+
+== Event 49200 finish == 1min 45s: 0.00213415s/event
+
+== Event 49300 finish == 1min 45s: 0.00212982s/event
+
+== Event 49400 finish == 1min 45s: 0.00212551s/event
+
+== Event 49500 finish == 1min 45s: 0.00212121s/event
+
+== Event 49600 finish == 1min 45s: 0.00211694s/event
+
+== Event 49700 finish == 1min 46s: 0.0021328s/event
+
+== Event 49800 finish == 1min 46s: 0.00212851s/event
+
+== Event 49900 finish == 1min 46s: 0.00212425s/event
+
+== Event 50000 finish == 1min 46s: 0.00212s/event
+
+== Event 50100 finish == 1min 46s: 0.00211577s/event
+
+== Event 50200 finish == 1min 46s: 0.00211155s/event
+
+== Event 50300 finish == 1min 47s: 0.00212724s/event
+
+== Event 50400 finish == 1min 47s: 0.00212302s/event
+
+== Event 50500 finish == 1min 47s: 0.00211881s/event
+
+== Event 50600 finish == 1min 47s: 0.00211462s/event
+
+== Event 50700 finish == 1min 47s: 0.00211045s/event
+
+== Event 50800 finish == 1min 47s: 0.0021063s/event
+
+== Event 50900 finish == 1min 47s: 0.00210216s/event
+
+== Event 51000 finish == 1min 47s: 0.00209804s/event
+
+== Event 51100 finish == 1min 48s: 0.0021135s/event
+
+== Event 51200 finish == 1min 48s: 0.00210938s/event
+
+== Event 51300 finish == 1min 48s: 0.00210526s/event
+
+== Event 51400 finish == 1min 48s: 0.00210117s/event
+
+== Event 51500 finish == 1min 48s: 0.00209709s/event
+
+== Event 51600 finish == 1min 48s: 0.00209302s/event
+
+== Event 51700 finish == 1min 49s: 0.00210832s/event
+
+== Event 51800 finish == 1min 49s: 0.00210425s/event
+
+== Event 51900 finish == 1min 49s: 0.00210019s/event
+
+== Event 52000 finish == 1min 49s: 0.00209615s/event
+
+== Event 52100 finish == 1min 49s: 0.00209213s/event
+
+== Event 52200 finish == 1min 49s: 0.00208812s/event
+
+== Event 52300 finish == 1min 49s: 0.00208413s/event
+
+== Event 52400 finish == 1min 50s: 0.00209924s/event
+
+== Event 52500 finish == 1min 50s: 0.00209524s/event
+
+== Event 52600 finish == 1min 50s: 0.00209125s/event
+
+== Event 52700 finish == 1min 50s: 0.00208729s/event
+
+== Event 52800 finish == 1min 50s: 0.00208333s/event
+
+== Event 52900 finish == 1min 50s: 0.0020794s/event
+
+== Event 53000 finish == 1min 50s: 0.00207547s/event
+
+== Event 53100 finish == 1min 50s: 0.00207156s/event
+
+== Event 53200 finish == 1min 51s: 0.00208647s/event
+
+== Event 53300 finish == 1min 51s: 0.00208255s/event
+
+== Event 53400 finish == 1min 51s: 0.00207865s/event
+
+== Event 53500 finish == 1min 51s: 0.00207477s/event
+
+== Event 53600 finish == 1min 51s: 0.0020709s/event
+
+== Event 53700 finish == 1min 51s: 0.00206704s/event
+
+== Event 53800 finish == 1min 52s: 0.00208178s/event
+
+== Event 53900 finish == 1min 52s: 0.00207792s/event
+
+== Event 54000 finish == 1min 52s: 0.00207407s/event
+
+== Event 54100 finish == 1min 52s: 0.00207024s/event
+
+== Event 54200 finish == 1min 52s: 0.00206642s/event
+
+== Event 54300 finish == 1min 52s: 0.00206262s/event
+
+== Event 54400 finish == 1min 52s: 0.00205882s/event
+
+== Event 54500 finish == 1min 53s: 0.00207339s/event
+
+== Event 54600 finish == 1min 53s: 0.0020696s/event
+
+== Event 54700 finish == 1min 53s: 0.00206581s/event
+
+== Event 54800 finish == 1min 53s: 0.00206204s/event
+
+== Event 54900 finish == 1min 53s: 0.00205829s/event
+
+== Event 55000 finish == 1min 53s: 0.00205455s/event
+
+== Event 55100 finish == 1min 53s: 0.00205082s/event
+
+== Event 55200 finish == 1min 53s: 0.0020471s/event
+
+== Event 55300 finish == 1min 53s: 0.0020434s/event
+
+== Event 55400 finish == 1min 54s: 0.00205776s/event
+
+== Event 55500 finish == 1min 54s: 0.00205405s/event
+
+== Event 55600 finish == 1min 54s: 0.00205036s/event
+
+== Event 55700 finish == 1min 54s: 0.00204668s/event
+
+== Event 55800 finish == 1min 54s: 0.00204301s/event
+
+== Event 55900 finish == 1min 54s: 0.00203936s/event
+
+== Event 56000 finish == 1min 54s: 0.00203571s/event
+
+== Event 56100 finish == 1min 55s: 0.00204991s/event
+
+== Event 56200 finish == 1min 55s: 0.00204626s/event
+
+== Event 56300 finish == 1min 55s: 0.00204263s/event
+
+== Event 56400 finish == 1min 55s: 0.00203901s/event
+
+== Event 56500 finish == 1min 55s: 0.0020354s/event
+
+== Event 56600 finish == 1min 55s: 0.0020318s/event
+
+== Event 56700 finish == 1min 55s: 0.00202822s/event
+
+== Event 56800 finish == 1min 55s: 0.00202465s/event
+
+== Event 56900 finish == 1min 56s: 0.00203866s/event
+
+== Event 57000 finish == 1min 56s: 0.00203509s/event
+
+== Event 57100 finish == 1min 56s: 0.00203152s/event
+
+== Event 57200 finish == 1min 56s: 0.00202797s/event
+
+== Event 57300 finish == 1min 56s: 0.00202443s/event
+
+== Event 57400 finish == 1min 57s: 0.00203833s/event
+
+== Event 57500 finish == 1min 57s: 0.00203478s/event
+
+== Event 57600 finish == 1min 57s: 0.00203125s/event
+
+== Event 57700 finish == 1min 57s: 0.00202773s/event
+
+== Event 57800 finish == 1min 57s: 0.00202422s/event
+
+== Event 57900 finish == 1min 57s: 0.00202073s/event
+
+== Event 58000 finish == 1min 57s: 0.00201724s/event
+
+== Event 58100 finish == 1min 57s: 0.00201377s/event
+
+== Event 58200 finish == 1min 57s: 0.00201031s/event
+
+== Event 58300 finish == 1min 58s: 0.00202401s/event
+
+== Event 58400 finish == 1min 58s: 0.00202055s/event
+
+== Event 58500 finish == 1min 58s: 0.00201709s/event
+
+== Event 58600 finish == 1min 58s: 0.00201365s/event
+
+== Event 58700 finish == 1min 58s: 0.00201022s/event
+
+== Event 58800 finish == 1min 58s: 0.0020068s/event
+
+== Event 58900 finish == 1min 58s: 0.0020034s/event
+
+== Event 59000 finish == 1min 59s: 0.00201695s/event
+
+== Event 59100 finish == 1min 59s: 0.00201354s/event
+
+== Event 59200 finish == 1min 59s: 0.00201014s/event
+
+== Event 59300 finish == 1min 59s: 0.00200675s/event
+
+== Event 59400 finish == 1min 59s: 0.00200337s/event
+
+== Event 59500 finish == 1min 59s: 0.002s/event
+
+== Event 59600 finish == 1min 59s: 0.00199664s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16135043 (previous = 16125039)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16135043  Event 2582102  TimeStamp 20150516.  2712  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 59700 finish == 2min 0s: 0.00201005s/event
+
+== Event 59800 finish == 2min 0s: 0.00200669s/event
+
+== Event 59900 finish == 2min 0s: 0.00200334s/event
+
+== Event 60000 finish == 2min 0s: 0.002s/event
+
+== Event 60100 finish == 2min 1s: 0.00201331s/event
+
+== Event 60200 finish == 2min 1s: 0.00200997s/event
+
+== Event 60300 finish == 2min 1s: 0.00200663s/event
+
+== Event 60400 finish == 2min 1s: 0.00200331s/event
+
+== Event 60500 finish == 2min 1s: 0.002s/event
+
+== Event 60600 finish == 2min 1s: 0.0019967s/event
+
+== Event 60700 finish == 2min 1s: 0.00199341s/event
+
+== Event 60800 finish == 2min 2s: 0.00200658s/event
+
+== Event 60900 finish == 2min 2s: 0.00200328s/event
+
+== Event 61000 finish == 2min 2s: 0.002s/event
+
+== Event 61100 finish == 2min 2s: 0.00199673s/event
+
+== Event 61200 finish == 2min 2s: 0.00199346s/event
+
+== Event 61300 finish == 2min 3s: 0.00200653s/event
+
+== Event 61400 finish == 2min 3s: 0.00200326s/event
+
+== Event 61500 finish == 2min 3s: 0.002s/event
+
+== Event 61600 finish == 2min 3s: 0.00199675s/event
+
+== Event 61700 finish == 2min 3s: 0.00199352s/event
+
+== Event 61800 finish == 2min 3s: 0.00199029s/event
+
+== Event 61900 finish == 2min 3s: 0.00198708s/event
+
+== Event 62000 finish == 2min 4s: 0.002s/event
+
+== Event 62100 finish == 2min 4s: 0.00199678s/event
+
+== Event 62200 finish == 2min 4s: 0.00199357s/event
+
+== Event 62300 finish == 2min 4s: 0.00199037s/event
+
+== Event 62400 finish == 2min 4s: 0.00198718s/event
+
+== Event 62500 finish == 2min 4s: 0.001984s/event
+
+== Event 62600 finish == 2min 5s: 0.00199681s/event
+
+== Event 62700 finish == 2min 5s: 0.00199362s/event
+
+== Event 62800 finish == 2min 5s: 0.00199045s/event
+
+== Event 62900 finish == 2min 5s: 0.00198728s/event
+
+== Event 63000 finish == 2min 5s: 0.00198413s/event
+
+== Event 63100 finish == 2min 5s: 0.00198098s/event
+
+== Event 63200 finish == 2min 6s: 0.00199367s/event
+
+== Event 63300 finish == 2min 6s: 0.00199052s/event
+
+== Event 63400 finish == 2min 6s: 0.00198738s/event
+
+== Event 63500 finish == 2min 6s: 0.00198425s/event
+
+== Event 63600 finish == 2min 6s: 0.00198113s/event
+
+== Event 63700 finish == 2min 7s: 0.00199372s/event
+
+== Event 63800 finish == 2min 7s: 0.0019906s/event
+
+== Event 63900 finish == 2min 7s: 0.00198748s/event
+
+== Event 64000 finish == 2min 7s: 0.00198438s/event
+
+== Event 64100 finish == 2min 7s: 0.00198128s/event
+
+== Event 64200 finish == 2min 7s: 0.00197819s/event
+
+== Event 64300 finish == 2min 8s: 0.00199067s/event
+
+== Event 64400 finish == 2min 8s: 0.00198758s/event
+
+== Event 64500 finish == 2min 8s: 0.0019845s/event
+
+== Event 64600 finish == 2min 8s: 0.00198142s/event
+
+== Event 64700 finish == 2min 8s: 0.00197836s/event
+
+== Event 64800 finish == 2min 8s: 0.00197531s/event
+
+== Event 64900 finish == 2min 9s: 0.00198767s/event
+
+== Event 65000 finish == 2min 9s: 0.00198462s/event
+
+== Event 65100 finish == 2min 9s: 0.00198157s/event
+
+== Event 65200 finish == 2min 9s: 0.00197853s/event
+
+== Event 65300 finish == 2min 9s: 0.0019755s/event
+
+== Event 65400 finish == 2min 10s: 0.00198777s/event
+
+== Event 65500 finish == 2min 10s: 0.00198473s/event
+
+== Event 65600 finish == 2min 10s: 0.00198171s/event
+
+== Event 65700 finish == 2min 10s: 0.00197869s/event
+
+== Event 65800 finish == 2min 10s: 0.00197568s/event
+
+== Event 65900 finish == 2min 10s: 0.00197269s/event
+
+== Event 66000 finish == 2min 10s: 0.0019697s/event
+
+== Event 66100 finish == 2min 11s: 0.00198185s/event
+
+== Event 66200 finish == 2min 11s: 0.00197885s/event
+
+== Event 66300 finish == 2min 11s: 0.00197587s/event
+
+== Event 66400 finish == 2min 11s: 0.00197289s/event
+
+== Event 66500 finish == 2min 11s: 0.00196992s/event
+
+== Event 66600 finish == 2min 12s: 0.00198198s/event
+
+== Event 66700 finish == 2min 12s: 0.00197901s/event
+
+== Event 66800 finish == 2min 12s: 0.00197605s/event
+
+== Event 66900 finish == 2min 12s: 0.00197309s/event
+
+== Event 67000 finish == 2min 12s: 0.00197015s/event
+
+== Event 67100 finish == 2min 12s: 0.00196721s/event
+
+== Event 67200 finish == 2min 13s: 0.00197917s/event
+
+== Event 67300 finish == 2min 13s: 0.00197623s/event
+
+== Event 67400 finish == 2min 13s: 0.00197329s/event
+
+== Event 67500 finish == 2min 13s: 0.00197037s/event
+
+== Event 67600 finish == 2min 13s: 0.00196746s/event
+
+== Event 67700 finish == 2min 14s: 0.00197932s/event
+
+== Event 67800 finish == 2min 14s: 0.0019764s/event
+
+== Event 67900 finish == 2min 14s: 0.00197349s/event
+
+== Event 68000 finish == 2min 14s: 0.00197059s/event
+
+== Event 68100 finish == 2min 14s: 0.00196769s/event
+
+== Event 68200 finish == 2min 14s: 0.00196481s/event
+
+== Event 68300 finish == 2min 15s: 0.00197657s/event
+
+== Event 68400 finish == 2min 15s: 0.00197368s/event
+
+== Event 68500 finish == 2min 15s: 0.0019708s/event
+
+== Event 68600 finish == 2min 15s: 0.00196793s/event
+
+== Event 68700 finish == 2min 15s: 0.00196507s/event
+
+== Event 68800 finish == 2min 15s: 0.00196221s/event
+
+== Event 68900 finish == 2min 16s: 0.00197388s/event
+
+== Event 69000 finish == 2min 16s: 0.00197101s/event
+
+== Event 69100 finish == 2min 16s: 0.00196816s/event
+
+== Event 69200 finish == 2min 16s: 0.00196532s/event
+
+== Event 69300 finish == 2min 16s: 0.00196248s/event
+
+== Event 69400 finish == 2min 16s: 0.00195965s/event
+
+== Event 69500 finish == 2min 16s: 0.00195683s/event
+
+== Event 69600 finish == 2min 17s: 0.00196839s/event
+
+== Event 69700 finish == 2min 17s: 0.00196557s/event
+
+== Event 69800 finish == 2min 17s: 0.00196275s/event
+
+== Event 69900 finish == 2min 17s: 0.00195994s/event
+
+== Event 70000 finish == 2min 17s: 0.00195714s/event
+
+== Event 70100 finish == 2min 18s: 0.00196862s/event
+
+== Event 70200 finish == 2min 18s: 0.00196581s/event
+
+== Event 70300 finish == 2min 18s: 0.00196302s/event
+
+== Event 70400 finish == 2min 18s: 0.00196023s/event
+
+== Event 70500 finish == 2min 18s: 0.00195745s/event
+
+== Event 70600 finish == 2min 18s: 0.00195467s/event
+
+== Event 70700 finish == 2min 18s: 0.00195191s/event
+
+== Event 70800 finish == 2min 19s: 0.00196328s/event
+
+== Event 70900 finish == 2min 19s: 0.00196051s/event
+
+== Event 71000 finish == 2min 19s: 0.00195775s/event
+
+== Event 71100 finish == 2min 19s: 0.00195499s/event
+
+== Event 71200 finish == 2min 19s: 0.00195225s/event
+
+== Event 71300 finish == 2min 20s: 0.00196353s/event
+
+== Event 71400 finish == 2min 20s: 0.00196078s/event
+
+== Event 71500 finish == 2min 20s: 0.00195804s/event
+
+== Event 71600 finish == 2min 20s: 0.00195531s/event
+
+== Event 71700 finish == 2min 20s: 0.00195258s/event
+
+== Event 71800 finish == 2min 20s: 0.00194986s/event
+
+== Event 71900 finish == 2min 21s: 0.00196106s/event
+
+== Event 72000 finish == 2min 21s: 0.00195833s/event
+
+== Event 72100 finish == 2min 21s: 0.00195562s/event
+
+== Event 72200 finish == 2min 21s: 0.00195291s/event
+
+== Event 72300 finish == 2min 21s: 0.00195021s/event
+
+== Event 72400 finish == 2min 21s: 0.00194751s/event
+
+== Event 72500 finish == 2min 22s: 0.00195862s/event
+
+== Event 72600 finish == 2min 22s: 0.00195592s/event
+
+== Event 72700 finish == 2min 22s: 0.00195323s/event
+
+== Event 72800 finish == 2min 22s: 0.00195055s/event
+
+== Event 72900 finish == 2min 22s: 0.00194787s/event
+
+== Event 73000 finish == 2min 22s: 0.00194521s/event
+
+== Event 73100 finish == 2min 23s: 0.00195622s/event
+
+== Event 73200 finish == 2min 23s: 0.00195355s/event
+
+== Event 73300 finish == 2min 23s: 0.00195089s/event
+
+== Event 73400 finish == 2min 23s: 0.00194823s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16137039 (previous = 16135043)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16137039  Event 3572784  TimeStamp 20150517.230439  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 73500 finish == 2min 23s: 0.00194558s/event
+
+== Event 73600 finish == 2min 24s: 0.00195652s/event
+
+== Event 73700 finish == 2min 24s: 0.00195387s/event
+
+== Event 73800 finish == 2min 24s: 0.00195122s/event
+
+== Event 73900 finish == 2min 24s: 0.00194858s/event
+
+== Event 74000 finish == 2min 25s: 0.00195946s/event
+
+== Event 74100 finish == 2min 25s: 0.00195682s/event
+
+== Event 74200 finish == 2min 25s: 0.00195418s/event
+
+== Event 74300 finish == 2min 26s: 0.00196501s/event
+
+== Event 74400 finish == 2min 26s: 0.00196237s/event
+
+== Event 74500 finish == 2min 26s: 0.00195973s/event
+
+== Event 74600 finish == 2min 27s: 0.00197051s/event
+
+== Event 74700 finish == 2min 27s: 0.00196787s/event
+
+== Event 74800 finish == 2min 27s: 0.00196524s/event
+
+== Event 74900 finish == 2min 27s: 0.00196262s/event
+
+== Event 75000 finish == 2min 28s: 0.00197333s/event
+
+== Event 75100 finish == 2min 28s: 0.00197071s/event
+
+== Event 75200 finish == 2min 28s: 0.00196809s/event
+
+== Event 75300 finish == 2min 29s: 0.00197875s/event
+
+== Event 75400 finish == 2min 29s: 0.00197613s/event
+
+== Event 75500 finish == 2min 29s: 0.00197351s/event
+
+== Event 75600 finish == 2min 30s: 0.00198413s/event
+
+== Event 75700 finish == 2min 30s: 0.00198151s/event
+
+== Event 75800 finish == 2min 30s: 0.00197889s/event
+
+== Event 75900 finish == 2min 30s: 0.00197628s/event
+
+== Event 76000 finish == 2min 30s: 0.00197368s/event
+
+== Event 76100 finish == 2min 31s: 0.00198423s/event
+
+== Event 76200 finish == 2min 31s: 0.00198163s/event
+
+== Event 76300 finish == 2min 32s: 0.00199214s/event
+
+== Event 76400 finish == 2min 32s: 0.00198953s/event
+
+== Event 76500 finish == 2min 32s: 0.00198693s/event
+
+== Event 76600 finish == 2min 32s: 0.00198433s/event
+
+== Event 76700 finish == 2min 33s: 0.00199478s/event
+
+== Event 76800 finish == 2min 33s: 0.00199219s/event
+
+== Event 76900 finish == 2min 33s: 0.0019896s/event
+
+== Event 77000 finish == 2min 33s: 0.00198701s/event
+
+== Event 77100 finish == 2min 34s: 0.00199741s/event
+
+== Event 77200 finish == 2min 34s: 0.00199482s/event
+
+== Event 77300 finish == 2min 34s: 0.00199224s/event
+
+== Event 77400 finish == 2min 34s: 0.00198966s/event
+
+== Event 77500 finish == 2min 35s: 0.002s/event
+
+== Event 77600 finish == 2min 35s: 0.00199742s/event
+
+== Event 77700 finish == 2min 35s: 0.00199485s/event
+
+== Event 77800 finish == 2min 36s: 0.00200514s/event
+
+== Event 77900 finish == 2min 36s: 0.00200257s/event
+
+== Event 78000 finish == 2min 36s: 0.002s/event
+
+== Event 78100 finish == 2min 36s: 0.00199744s/event
+
+== Event 78200 finish == 2min 37s: 0.00200767s/event
+
+== Event 78300 finish == 2min 37s: 0.00200511s/event
+
+== Event 78400 finish == 2min 37s: 0.00200255s/event
+
+== Event 78500 finish == 2min 37s: 0.002s/event
+
+== Event 78600 finish == 2min 38s: 0.00201018s/event
+
+== Event 78700 finish == 2min 38s: 0.00200762s/event
+
+== Event 78800 finish == 2min 38s: 0.00200508s/event
+
+== Event 78900 finish == 2min 39s: 0.00201521s/event
+
+== Event 79000 finish == 2min 39s: 0.00201266s/event
+
+== Event 79100 finish == 2min 39s: 0.00201011s/event
+
+== Event 79200 finish == 2min 40s: 0.0020202s/event
+
+== Event 79300 finish == 2min 40s: 0.00201765s/event
+
+== Event 79400 finish == 2min 40s: 0.00201511s/event
+
+== Event 79500 finish == 2min 40s: 0.00201258s/event
+
+== Event 79600 finish == 2min 41s: 0.00202261s/event
+
+== Event 79700 finish == 2min 41s: 0.00202008s/event
+
+== Event 79800 finish == 2min 41s: 0.00201754s/event
+
+== Event 79900 finish == 2min 41s: 0.00201502s/event
+
+== Event 80000 finish == 2min 41s: 0.0020125s/event
+
+== Event 80100 finish == 2min 42s: 0.00202247s/event
+
+== Event 80200 finish == 2min 42s: 0.00201995s/event
+
+== Event 80300 finish == 2min 42s: 0.00201743s/event
+
+== Event 80400 finish == 2min 42s: 0.00201493s/event
+
+== Event 80500 finish == 2min 43s: 0.00202484s/event
+
+== Event 80600 finish == 2min 43s: 0.00202233s/event
+
+== Event 80700 finish == 2min 43s: 0.00201983s/event
+
+== Event 80800 finish == 2min 43s: 0.00201733s/event
+
+== Event 80900 finish == 2min 44s: 0.00202719s/event
+
+== Event 81000 finish == 2min 44s: 0.00202469s/event
+
+== Event 81100 finish == 2min 44s: 0.00202219s/event
+
+== Event 81200 finish == 2min 44s: 0.0020197s/event
+
+== Event 81300 finish == 2min 45s: 0.00202952s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16153011 (previous = 16137039)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16153011  Event  4550  TimeStamp 20150602. 84909  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 81400 finish == 2min 45s: 0.00202703s/event
+
+== Event 81500 finish == 2min 45s: 0.00202454s/event
+
+== Event 81600 finish == 2min 46s: 0.00203431s/event
+
+== Event 81700 finish == 2min 46s: 0.00203182s/event
+
+== Event 81800 finish == 2min 46s: 0.00202934s/event
+
+== Event 81900 finish == 2min 46s: 0.00202686s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16156043 (previous = 16153011)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16156043  Event 2289650  TimeStamp 20150605.220628  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 82000 finish == 2min 47s: 0.00203659s/event
+
+== Event 82100 finish == 2min 47s: 0.0020341s/event
+
+== Event 82200 finish == 2min 48s: 0.0020438s/event
+
+== Event 82300 finish == 2min 48s: 0.00204131s/event
+
+== Event 82400 finish == 2min 48s: 0.00203883s/event
+
+== Event 82500 finish == 2min 48s: 0.00203636s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16158051 (previous = 16156043)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16158051  Event 739602  TimeStamp 20150607.211647  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 82600 finish == 2min 49s: 0.002046s/event
+
+== Event 82700 finish == 2min 49s: 0.00204353s/event
+
+== Event 82800 finish == 2min 50s: 0.00205314s/event
+
+== Event 82900 finish == 2min 50s: 0.00205066s/event
+
+== Event 83000 finish == 2min 50s: 0.00204819s/event
+
+== Event 83100 finish == 2min 50s: 0.00204573s/event
+
+== Event 83200 finish == 2min 51s: 0.00205529s/event
+
+== Event 83300 finish == 2min 51s: 0.00205282s/event
+
+== Event 83400 finish == 2min 51s: 0.00205036s/event
+
+== Event 83500 finish == 2min 51s: 0.0020479s/event
+
+== Event 83600 finish == 2min 51s: 0.00204545s/event
+
+== Event 83700 finish == 2min 52s: 0.00205496s/event
+
+== Event 83800 finish == 2min 52s: 0.00205251s/event
+
+== Event 83900 finish == 2min 52s: 0.00205006s/event
+
+== Event 84000 finish == 2min 53s: 0.00205952s/event
+
+== Event 84100 finish == 2min 53s: 0.00205707s/event
+
+== Event 84200 finish == 2min 53s: 0.00205463s/event
+
+== Event 84300 finish == 2min 53s: 0.00205219s/event
+
+== Event 84400 finish == 2min 54s: 0.00206161s/event
+
+== Event 84500 finish == 2min 54s: 0.00205917s/event
+
+== Event 84600 finish == 2min 54s: 0.00205674s/event
+
+== Event 84700 finish == 2min 55s: 0.00206612s/event
+
+== Event 84800 finish == 2min 55s: 0.00206368s/event
+
+== Event 84900 finish == 2min 55s: 0.00206125s/event
+
+== Event 85000 finish == 2min 55s: 0.00205882s/event
+
+== Event 85100 finish == 2min 56s: 0.00206816s/event
+
+== Event 85200 finish == 2min 56s: 0.00206573s/event
+
+== Event 85300 finish == 2min 56s: 0.00206331s/event
+
+== Event 85400 finish == 2min 57s: 0.0020726s/event
+
+== Event 85500 finish == 2min 57s: 0.00207018s/event
+
+== Event 85600 finish == 2min 57s: 0.00206776s/event
+
+== Event 85700 finish == 2min 58s: 0.00207701s/event
+
+== Event 85800 finish == 2min 58s: 0.00207459s/event
+
+== Event 85900 finish == 2min 58s: 0.00207218s/event
+
+== Event 86000 finish == 2min 59s: 0.0020814s/event
+
+== Event 86100 finish == 2min 59s: 0.00207898s/event
+
+== Event 86200 finish == 2min 59s: 0.00207657s/event
+
+== Event 86300 finish == 2min 59s: 0.00207416s/event
+
+== Event 86400 finish == 3min 0s: 0.00208333s/event
+
+== Event 86500 finish == 3min 0s: 0.00208092s/event
+
+== Event 86600 finish == 3min 0s: 0.00207852s/event
+
+== Event 86700 finish == 3min 0s: 0.00207612s/event
+
+== Event 86800 finish == 3min 1s: 0.00208525s/event
+
+== Event 86900 finish == 3min 1s: 0.00208285s/event
+
+== Event 87000 finish == 3min 1s: 0.00208046s/event
+
+== Event 87100 finish == 3min 1s: 0.00207807s/event
+
+== Event 87200 finish == 3min 2s: 0.00208716s/event
+
+== Event 87300 finish == 3min 2s: 0.00208477s/event
+
+== Event 87400 finish == 3min 2s: 0.00208238s/event
+
+== Event 87500 finish == 3min 3s: 0.00209143s/event
+
+== Event 87600 finish == 3min 3s: 0.00208904s/event
+
+== Event 87700 finish == 3min 3s: 0.00208666s/event
+
+== Event 87800 finish == 3min 3s: 0.00208428s/event
+
+== Event 87900 finish == 3min 3s: 0.00208191s/event
+
+== Event 88000 finish == 3min 4s: 0.00209091s/event
+
+== Event 88100 finish == 3min 4s: 0.00208854s/event
+
+== Event 88200 finish == 3min 4s: 0.00208617s/event
+
+== Event 88300 finish == 3min 5s: 0.00209513s/event
+
+== Event 88400 finish == 3min 5s: 0.00209276s/event
+
+== Event 88500 finish == 3min 5s: 0.0020904s/event
+
+== Event 88600 finish == 3min 5s: 0.00208804s/event
+
+== Event 88700 finish == 3min 6s: 0.00209696s/event
+
+== Event 88800 finish == 3min 6s: 0.00209459s/event
+
+== Event 88900 finish == 3min 6s: 0.00209224s/event
+
+== Event 89000 finish == 3min 6s: 0.00208989s/event
+
+== Event 89100 finish == 3min 7s: 0.00209877s/event
+
+== Event 89200 finish == 3min 7s: 0.00209641s/event
+
+== Event 89300 finish == 3min 7s: 0.00209406s/event
+
+== Event 89400 finish == 3min 7s: 0.00209172s/event
+
+== Event 89500 finish == 3min 8s: 0.00210056s/event
+
+== Event 89600 finish == 3min 8s: 0.00209821s/event
+
+== Event 89700 finish == 3min 8s: 0.00209588s/event
+
+== Event 89800 finish == 3min 8s: 0.00209354s/event
+
+== Event 89900 finish == 3min 9s: 0.00210234s/event
+
+== Event 90000 finish == 3min 9s: 0.0021s/event
+
+== Event 90100 finish == 3min 9s: 0.00209767s/event
+
+== Event 90200 finish == 3min 9s: 0.00209534s/event
+
+== Event 90300 finish == 3min 10s: 0.0021041s/event
+
+== Event 90400 finish == 3min 10s: 0.00210177s/event
+
+== Event 90500 finish == 3min 11s: 0.0021105s/event
+
+== Event 90600 finish == 3min 11s: 0.00210817s/event
+
+== Event 90700 finish == 3min 11s: 0.00210584s/event
+
+== Event 90800 finish == 3min 11s: 0.00210352s/event
+
+== Event 90900 finish == 3min 11s: 0.00210121s/event
+
+== Event 91000 finish == 3min 12s: 0.00210989s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16125014 (previous = 16158051)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16125014  Event 1098584  TimeStamp 20150505.131155  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 91100 finish == 3min 12s: 0.00210757s/event
+
+== Event 91200 finish == 3min 12s: 0.00210526s/event
+
+== Event 91300 finish == 3min 12s: 0.00210296s/event
+
+== Event 91400 finish == 3min 13s: 0.0021116s/event
+
+== Event 91500 finish == 3min 13s: 0.00210929s/event
+
+== Event 91600 finish == 3min 13s: 0.00210699s/event
+
+== Event 91700 finish == 3min 14s: 0.00211559s/event
+
+== Event 91800 finish == 3min 14s: 0.00211329s/event
+
+== Event 91900 finish == 3min 14s: 0.00211099s/event
+
+== Event 92000 finish == 3min 15s: 0.00211957s/event
+
+== Event 92100 finish == 3min 15s: 0.00211726s/event
+
+== Event 92200 finish == 3min 15s: 0.00211497s/event
+
+== Event 92300 finish == 3min 15s: 0.00211268s/event
+
+== Event 92400 finish == 3min 16s: 0.00212121s/event
+
+== Event 92500 finish == 3min 16s: 0.00211892s/event
+
+== Event 92600 finish == 3min 16s: 0.00211663s/event
+
+== Event 92700 finish == 3min 16s: 0.00211435s/event
+
+== Event 92800 finish == 3min 17s: 0.00212284s/event
+
+== Event 92900 finish == 3min 17s: 0.00212056s/event
+
+== Event 93000 finish == 3min 17s: 0.00211828s/event
+
+== Event 93100 finish == 3min 17s: 0.002116s/event
+
+== Event 93200 finish == 3min 18s: 0.00212446s/event
+
+== Event 93300 finish == 3min 18s: 0.00212219s/event
+
+== Event 93400 finish == 3min 18s: 0.00211991s/event
+
+== Event 93500 finish == 3min 19s: 0.00212834s/event
+
+== Event 93600 finish == 3min 19s: 0.00212607s/event
+
+== Event 93700 finish == 3min 19s: 0.0021238s/event
+
+== Event 93800 finish == 3min 20s: 0.0021322s/event
+
+== Event 93900 finish == 3min 20s: 0.00212993s/event
+
+== Event 94000 finish == 3min 20s: 0.00212766s/event
+
+== Event 94100 finish == 3min 21s: 0.00213603s/event
+
+== Event 94200 finish == 3min 21s: 0.00213376s/event
+
+== Event 94300 finish == 3min 21s: 0.0021315s/event
+
+== Event 94400 finish == 3min 22s: 0.00213983s/event
+
+== Event 94500 finish == 3min 22s: 0.00213757s/event
+
+== Event 94600 finish == 3min 22s: 0.00213531s/event
+
+== Event 94700 finish == 3min 23s: 0.00214361s/event
+
+== Event 94800 finish == 3min 23s: 0.00214135s/event
+
+== Event 94900 finish == 3min 23s: 0.00213909s/event
+
+== Event 95000 finish == 3min 23s: 0.00213684s/event
+
+== Event 95100 finish == 3min 24s: 0.00214511s/event
+
+== Event 95200 finish == 3min 24s: 0.00214286s/event
+
+== Event 95300 finish == 3min 25s: 0.0021511s/event
+
+== Event 95400 finish == 3min 25s: 0.00214885s/event
+
+== Event 95500 finish == 3min 25s: 0.0021466s/event
+
+== Event 95600 finish == 3min 25s: 0.00214435s/event
+
+== Event 95700 finish == 3min 26s: 0.00215256s/event
+
+== Event 95800 finish == 3min 26s: 0.00215031s/event
+
+== Event 95900 finish == 3min 26s: 0.00214807s/event
+
+== Event 96000 finish == 3min 27s: 0.00215625s/event
+
+== Event 96100 finish == 3min 27s: 0.00215401s/event
+
+== Event 96200 finish == 3min 27s: 0.00215177s/event
+
+== Event 96300 finish == 3min 27s: 0.00214953s/event
+
+== Event 96400 finish == 3min 28s: 0.00215768s/event
+
+== Event 96500 finish == 3min 28s: 0.00215544s/event
+
+== Event 96600 finish == 3min 29s: 0.00216356s/event
+
+== Event 96700 finish == 3min 29s: 0.00216132s/event
+
+== Event 96800 finish == 3min 29s: 0.00215909s/event
+
+== Event 96900 finish == 3min 29s: 0.00215686s/event
+
+== Event 97000 finish == 3min 30s: 0.00216495s/event
+
+== Event 97100 finish == 3min 30s: 0.00216272s/event
+
+== Event 97200 finish == 3min 30s: 0.00216049s/event
+
+== Event 97300 finish == 3min 31s: 0.00216855s/event
+
+== Event 97400 finish == 3min 31s: 0.00216632s/event
+
+== Event 97500 finish == 3min 31s: 0.0021641s/event
+
+== Event 97600 finish == 3min 31s: 0.00216189s/event
+
+== Event 97700 finish == 3min 32s: 0.00216991s/event
+
+== Event 97800 finish == 3min 32s: 0.00216769s/event
+
+== Event 97900 finish == 3min 32s: 0.00216547s/event
+
+== Event 98000 finish == 3min 33s: 0.00217347s/event
+
+== Event 98100 finish == 3min 33s: 0.00217125s/event
+
+== Event 98200 finish == 3min 33s: 0.00216904s/event
+
+== Event 98300 finish == 3min 34s: 0.00217701s/event
+
+== Event 98400 finish == 3min 34s: 0.0021748s/event
+
+== Event 98500 finish == 3min 34s: 0.00217259s/event
+
+== Event 98600 finish == 3min 35s: 0.00218053s/event
+
+== Event 98700 finish == 3min 35s: 0.00217832s/event
+
+== Event 98800 finish == 3min 35s: 0.00217611s/event
+
+== Event 98900 finish == 3min 36s: 0.00218402s/event
+
+== Event 99000 finish == 3min 36s: 0.00218182s/event
+
+== Event 99100 finish == 3min 36s: 0.00217962s/event
+
+== Event 99200 finish == 3min 37s: 0.0021875s/event
+
+== Event 99300 finish == 3min 37s: 0.0021853s/event
+
+== Event 99400 finish == 3min 37s: 0.0021831s/event
+
+== Event 99500 finish == 3min 37s: 0.0021809s/event
+
+== Event 99600 finish == 3min 38s: 0.00218876s/event
+
+== Event 99700 finish == 3min 38s: 0.00218656s/event
+
+== Event 99800 finish == 3min 38s: 0.00218437s/event
+
+== Event 99900 finish == 3min 39s: 0.00219219s/event
+
+== Event 100000 finish == 3min 39s: 0.00219s/event
+
+== Event 100100 finish == 3min 39s: 0.00218781s/event
+
+== Event 100200 finish == 3min 39s: 0.00218563s/event
+
+== Event 100300 finish == 3min 40s: 0.00219342s/event
+
+== Event 100400 finish == 3min 40s: 0.00219124s/event
+
+== Event 100500 finish == 3min 40s: 0.00218905s/event
+
+== Event 100600 finish == 3min 41s: 0.00219682s/event
+
+== Event 100700 finish == 3min 41s: 0.00219464s/event
+
+== Event 100800 finish == 3min 41s: 0.00219246s/event
+
+== Event 100900 finish == 3min 42s: 0.0022002s/event
+
+== Event 101000 finish == 3min 42s: 0.00219802s/event
+
+== Event 101100 finish == 3min 42s: 0.00219585s/event
+
+== Event 101200 finish == 3min 42s: 0.00219368s/event
+
+== Event 101300 finish == 3min 43s: 0.00220138s/event
+
+== Event 101400 finish == 3min 43s: 0.00219921s/event
+
+== Event 101500 finish == 3min 43s: 0.00219704s/event
+
+== Event 101600 finish == 3min 44s: 0.00220472s/event
+
+== Event 101700 finish == 3min 44s: 0.00220256s/event
+
+== Event 101800 finish == 3min 44s: 0.00220039s/event
+
+== Event 101900 finish == 3min 45s: 0.00220805s/event
+
+== Event 102000 finish == 3min 45s: 0.00220588s/event
+
+== Event 102100 finish == 3min 45s: 0.00220372s/event
+
+== Event 102200 finish == 3min 46s: 0.00221135s/event
+
+== Event 102300 finish == 3min 46s: 0.00220919s/event
+
+== Event 102400 finish == 3min 46s: 0.00220703s/event
+
+== Event 102500 finish == 3min 47s: 0.00221463s/event
+
+== Event 102600 finish == 3min 47s: 0.00221248s/event
+
+== Event 102700 finish == 3min 47s: 0.00221032s/event
+
+== Event 102800 finish == 3min 47s: 0.00220817s/event
+
+== Event 102900 finish == 3min 48s: 0.00221574s/event
+
+== Event 103000 finish == 3min 48s: 0.00221359s/event
+
+== Event 103100 finish == 3min 48s: 0.00221145s/event
+
+== Event 103200 finish == 3min 49s: 0.00221899s/event
+
+== Event 103300 finish == 3min 49s: 0.00221684s/event
+
+== Event 103400 finish == 3min 49s: 0.0022147s/event
+
+== Event 103500 finish == 3min 49s: 0.00221256s/event
+
+== Event 103600 finish == 3min 50s: 0.00222008s/event
+
+== Event 103700 finish == 3min 50s: 0.00221794s/event
+
+== Event 103800 finish == 3min 50s: 0.0022158s/event
+
+== Event 103900 finish == 3min 51s: 0.00222329s/event
+
+== Event 104000 finish == 3min 51s: 0.00222115s/event
+
+== Event 104100 finish == 3min 51s: 0.00221902s/event
+
+== Event 104200 finish == 3min 51s: 0.00221689s/event
+
+== Event 104300 finish == 3min 52s: 0.00222435s/event
+
+== Event 104400 finish == 3min 52s: 0.00222222s/event
+
+== Event 104500 finish == 3min 52s: 0.0022201s/event
+
+== Event 104600 finish == 3min 53s: 0.00222753s/event
+
+== Event 104700 finish == 3min 53s: 0.00222541s/event
+
+== Event 104800 finish == 3min 53s: 0.00222328s/event
+
+== Event 104900 finish == 3min 53s: 0.00222116s/event
+
+== Event 105000 finish == 3min 54s: 0.00222857s/event
+
+== Event 105100 finish == 3min 54s: 0.00222645s/event
+
+== Event 105200 finish == 3min 54s: 0.00222433s/event
+
+== Event 105300 finish == 3min 54s: 0.00222222s/event
+
+== Event 105400 finish == 3min 54s: 0.00222011s/event
+
+== Event 105500 finish == 3min 55s: 0.00222749s/event
+
+== Event 105600 finish == 3min 55s: 0.00222538s/event
+
+== Event 105700 finish == 3min 55s: 0.00222327s/event
+
+== Event 105800 finish == 3min 55s: 0.00222117s/event
+
+== Event 105900 finish == 3min 56s: 0.00222852s/event
+
+== Event 106000 finish == 3min 56s: 0.00222642s/event
+
+== Event 106100 finish == 3min 56s: 0.00222432s/event
+
+== Event 106200 finish == 3min 57s: 0.00223164s/event
+
+== Event 106300 finish == 3min 57s: 0.00222954s/event
+
+== Event 106400 finish == 3min 57s: 0.00222744s/event
+
+== Event 106500 finish == 3min 57s: 0.00222535s/event
+
+== Event 106600 finish == 3min 58s: 0.00223265s/event
+
+== Event 106700 finish == 3min 58s: 0.00223055s/event
+
+== Event 106800 finish == 3min 58s: 0.00222846s/event
+
+== Event 106900 finish == 3min 58s: 0.00222638s/event
+
+== Event 107000 finish == 3min 59s: 0.00223364s/event
+
+== Event 107100 finish == 3min 59s: 0.00223156s/event
+
+== Event 107200 finish == 3min 59s: 0.00222948s/event
+
+== Event 107300 finish == 4min 0s: 0.00223672s/event
+
+== Event 107400 finish == 4min 0s: 0.00223464s/event
+
+== Event 107500 finish == 4min 0s: 0.00223256s/event
+
+== Event 107600 finish == 4min 0s: 0.00223048s/event
+
+== Event 107700 finish == 4min 1s: 0.0022377s/event
+
+== Event 107800 finish == 4min 1s: 0.00223562s/event
+
+== Event 107900 finish == 4min 1s: 0.00223355s/event
+
+== Event 108000 finish == 4min 1s: 0.00223148s/event
+
+== Event 108100 finish == 4min 2s: 0.00223867s/event
+
+== Event 108200 finish == 4min 2s: 0.0022366s/event
+
+== Event 108300 finish == 4min 2s: 0.00223453s/event
+
+== Event 108400 finish == 4min 2s: 0.00223247s/event
+
+== Event 108500 finish == 4min 3s: 0.00223963s/event
+
+== Event 108600 finish == 4min 3s: 0.00223757s/event
+
+== Event 108700 finish == 4min 3s: 0.00223551s/event
+
+== Event 108800 finish == 4min 4s: 0.00224265s/event
+
+== Event 108900 finish == 4min 4s: 0.00224059s/event
+
+== Event 109000 finish == 4min 4s: 0.00223853s/event
+
+== Event 109100 finish == 4min 4s: 0.00223648s/event
+
+== Event 109200 finish == 4min 4s: 0.00223443s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16125035 (previous = 16125014)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16125035  Event  2120  TimeStamp 20150505.200951  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 109300 finish == 4min 5s: 0.00224154s/event
+
+== Event 109400 finish == 4min 5s: 0.00223949s/event
+
+== Event 109500 finish == 4min 5s: 0.00223744s/event
+
+== Event 109600 finish == 4min 5s: 0.0022354s/event
+
+== Event 109700 finish == 4min 5s: 0.00223336s/event
+
+== Event 109800 finish == 4min 6s: 0.00224044s/event
+
+== Event 109900 finish == 4min 6s: 0.0022384s/event
+
+== Event 110000 finish == 4min 6s: 0.00223636s/event
+
+== Event 110100 finish == 4min 6s: 0.00223433s/event
+
+== Event 110200 finish == 4min 6s: 0.0022323s/event
+
+== Event 110300 finish == 4min 6s: 0.00223028s/event
+
+== Event 110400 finish == 4min 7s: 0.00223732s/event
+
+== Event 110500 finish == 4min 7s: 0.00223529s/event
+
+== Event 110600 finish == 4min 7s: 0.00223327s/event
+
+== Event 110700 finish == 4min 7s: 0.00223126s/event
+
+== Event 110800 finish == 4min 7s: 0.00222924s/event
+
+== Event 110900 finish == 4min 7s: 0.00222723s/event
+
+== Event 111000 finish == 4min 8s: 0.00223423s/event
+
+== Event 111100 finish == 4min 8s: 0.00223222s/event
+
+== Event 111200 finish == 4min 8s: 0.00223022s/event
+
+== Event 111300 finish == 4min 8s: 0.00222821s/event
+
+== Event 111400 finish == 4min 8s: 0.00222621s/event
+
+== Event 111500 finish == 4min 8s: 0.00222422s/event
+
+== Event 111600 finish == 4min 8s: 0.00222222s/event
+
+== Event 111700 finish == 4min 9s: 0.00222919s/event
+
+== Event 111800 finish == 4min 9s: 0.00222719s/event
+
+== Event 111900 finish == 4min 9s: 0.0022252s/event
+
+== Event 112000 finish == 4min 9s: 0.00222321s/event
+
+== Event 112100 finish == 4min 9s: 0.00222123s/event
+
+== Event 112200 finish == 4min 9s: 0.00221925s/event
+
+== Event 112300 finish == 4min 9s: 0.00221728s/event
+
+== Event 112400 finish == 4min 9s: 0.0022153s/event
+
+== Event 112500 finish == 4min 10s: 0.00222222s/event
+
+== Event 112600 finish == 4min 10s: 0.00222025s/event
+
+== Event 112700 finish == 4min 10s: 0.00221828s/event
+
+== Event 112800 finish == 4min 10s: 0.00221631s/event
+
+== Event 112900 finish == 4min 10s: 0.00221435s/event
+
+== Event 113000 finish == 4min 11s: 0.00222124s/event
+
+== Event 113100 finish == 4min 11s: 0.00221927s/event
+
+== Event 113200 finish == 4min 11s: 0.00221731s/event
+
+== Event 113300 finish == 4min 11s: 0.00221536s/event
+
+== Event 113400 finish == 4min 11s: 0.0022134s/event
+
+== Event 113500 finish == 4min 11s: 0.00221145s/event
+
+== Event 113600 finish == 4min 11s: 0.00220951s/event
+
+== Event 113700 finish == 4min 12s: 0.00221636s/event
+
+== Event 113800 finish == 4min 12s: 0.00221441s/event
+
+== Event 113900 finish == 4min 12s: 0.00221247s/event
+
+== Event 114000 finish == 4min 12s: 0.00221053s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16125039 (previous = 16125035)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16125039  Event 540636  TimeStamp 20150505.211325  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 114100 finish == 4min 12s: 0.00220859s/event
+
+== Event 114200 finish == 4min 12s: 0.00220665s/event
+
+== Event 114300 finish == 4min 13s: 0.00221347s/event
+
+== Event 114400 finish == 4min 13s: 0.00221154s/event
+
+== Event 114500 finish == 4min 13s: 0.00220961s/event
+
+== Event 114600 finish == 4min 13s: 0.00220768s/event
+
+== Event 114700 finish == 4min 13s: 0.00220575s/event
+
+== Event 114800 finish == 4min 13s: 0.00220383s/event
+
+== Event 114900 finish == 4min 13s: 0.00220191s/event
+
+== Event 115000 finish == 4min 13s: 0.0022s/event
+
+== Event 115100 finish == 4min 14s: 0.00220678s/event
+
+== Event 115200 finish == 4min 14s: 0.00220486s/event
+
+== Event 115300 finish == 4min 14s: 0.00220295s/event
+
+== Event 115400 finish == 4min 14s: 0.00220104s/event
+
+== Event 115500 finish == 4min 14s: 0.00219913s/event
+
+== Event 115600 finish == 4min 14s: 0.00219723s/event
+
+== Event 115700 finish == 4min 14s: 0.00219533s/event
+
+== Event 115800 finish == 4min 15s: 0.00220207s/event
+
+== Event 115900 finish == 4min 15s: 0.00220017s/event
+
+== Event 116000 finish == 4min 15s: 0.00219828s/event
+
+== Event 116100 finish == 4min 15s: 0.00219638s/event
+
+== Event 116200 finish == 4min 15s: 0.00219449s/event
+
+== Event 116300 finish == 4min 15s: 0.00219261s/event
+
+== Event 116400 finish == 4min 15s: 0.00219072s/event
+
+== Event 116500 finish == 4min 15s: 0.00218884s/event
+
+== Event 116600 finish == 4min 16s: 0.00219554s/event
+
+== Event 116700 finish == 4min 16s: 0.00219366s/event
+
+== Event 116800 finish == 4min 16s: 0.00219178s/event
+
+== Event 116900 finish == 4min 16s: 0.00218991s/event
+
+== Event 117000 finish == 4min 16s: 0.00218803s/event
+
+== Event 117100 finish == 4min 16s: 0.00218617s/event
+
+== Event 117200 finish == 4min 16s: 0.0021843s/event
+
+== Event 117300 finish == 4min 16s: 0.00218244s/event
+
+== Event 117400 finish == 4min 16s: 0.00218058s/event
+
+== Event 117500 finish == 4min 16s: 0.00217872s/event
+
+== Event 117600 finish == 4min 17s: 0.00218537s/event
+
+== Event 117700 finish == 4min 17s: 0.00218352s/event
+
+== Event 117800 finish == 4min 17s: 0.00218166s/event
+
+== Event 117900 finish == 4min 17s: 0.00217981s/event
+
+== Event 118000 finish == 4min 17s: 0.00217797s/event
+
+== Event 118100 finish == 4min 17s: 0.00217612s/event
+
+== Event 118200 finish == 4min 18s: 0.00218274s/event
+
+== Event 118300 finish == 4min 18s: 0.0021809s/event
+
+== Event 118400 finish == 4min 18s: 0.00217905s/event
+
+== Event 118500 finish == 4min 18s: 0.00217722s/event
+
+== Event 118600 finish == 4min 18s: 0.00217538s/event
+
+== Event 118700 finish == 4min 18s: 0.00217355s/event
+
+== Event 118800 finish == 4min 18s: 0.00217172s/event
+
+== Event 118900 finish == 4min 18s: 0.00216989s/event
+
+== Event 119000 finish == 4min 18s: 0.00216807s/event
+
+== Event 119100 finish == 4min 19s: 0.00217464s/event
+
+== Event 119200 finish == 4min 19s: 0.00217282s/event
+
+== Event 119300 finish == 4min 19s: 0.002171s/event
+
+== Event 119400 finish == 4min 19s: 0.00216918s/event
+
+== Event 119500 finish == 4min 19s: 0.00216736s/event
+
+== Event 119600 finish == 4min 19s: 0.00216555s/event
+
+== Event 119700 finish == 4min 19s: 0.00216374s/event
+
+== Event 119800 finish == 4min 19s: 0.00216194s/event
+
+== Event 119900 finish == 4min 19s: 0.00216013s/event
+
+== Event 120000 finish == 4min 19s: 0.00215833s/event
+
+== Event 120100 finish == 4min 20s: 0.00216486s/event
+
+== Event 120200 finish == 4min 20s: 0.00216306s/event
+
+== Event 120300 finish == 4min 20s: 0.00216126s/event
+
+== Event 120400 finish == 4min 20s: 0.00215947s/event
+
+== Event 120500 finish == 4min 20s: 0.00215768s/event
+
+== Event 120600 finish == 4min 20s: 0.00215589s/event
+
+== Event 120700 finish == 4min 20s: 0.0021541s/event
+
+== Event 120800 finish == 4min 21s: 0.0021606s/event
+
+== Event 120900 finish == 4min 21s: 0.00215881s/event
+
+== Event 121000 finish == 4min 21s: 0.00215702s/event
+
+== Event 121100 finish == 4min 21s: 0.00215524s/event
+
+== Event 121200 finish == 4min 21s: 0.00215347s/event
+
+== Event 121300 finish == 4min 21s: 0.00215169s/event
+
+== Event 121400 finish == 4min 21s: 0.00214992s/event
+
+== Event 121500 finish == 4min 22s: 0.00215638s/event
+
+== Event 121600 finish == 4min 22s: 0.00215461s/event
+
+== Event 121700 finish == 4min 22s: 0.00215283s/event
+
+== Event 121800 finish == 4min 22s: 0.00215107s/event
+
+== Event 121900 finish == 4min 22s: 0.0021493s/event
+
+== Event 122000 finish == 4min 22s: 0.00214754s/event
+
+== Event 122100 finish == 4min 22s: 0.00214578s/event
+
+== Event 122200 finish == 4min 22s: 0.00214403s/event
+
+== Event 122300 finish == 4min 22s: 0.00214227s/event
+
+== Event 122400 finish == 4min 22s: 0.00214052s/event
+
+== Event 122500 finish == 4min 23s: 0.00214694s/event
+
+== Event 122600 finish == 4min 23s: 0.00214519s/event
+
+== Event 122700 finish == 4min 23s: 0.00214344s/event
+
+== Event 122800 finish == 4min 23s: 0.00214169s/event
+
+== Event 122900 finish == 4min 23s: 0.00213995s/event
+
+== Event 123000 finish == 4min 23s: 0.00213821s/event
+
+== Event 123100 finish == 4min 23s: 0.00213647s/event
+
+== Event 123200 finish == 4min 24s: 0.00214286s/event
+
+== Event 123300 finish == 4min 24s: 0.00214112s/event
+
+== Event 123400 finish == 4min 24s: 0.00213938s/event
+
+== Event 123500 finish == 4min 24s: 0.00213765s/event
+
+== Event 123600 finish == 4min 24s: 0.00213592s/event
+
+== Event 123700 finish == 4min 24s: 0.0021342s/event
+
+== Event 123800 finish == 4min 24s: 0.00213247s/event
+
+== Event 123900 finish == 4min 24s: 0.00213075s/event
+
+== Event 124000 finish == 4min 25s: 0.0021371s/event
+
+== Event 124100 finish == 4min 25s: 0.00213537s/event
+
+== Event 124200 finish == 4min 25s: 0.00213366s/event
+
+== Event 124300 finish == 4min 25s: 0.00213194s/event
+
+== Event 124400 finish == 4min 25s: 0.00213023s/event
+
+== Event 124500 finish == 4min 25s: 0.00212851s/event
+
+== Event 124600 finish == 4min 25s: 0.00212681s/event
+
+== Event 124700 finish == 4min 25s: 0.0021251s/event
+
+== Event 124800 finish == 4min 25s: 0.0021234s/event
+
+== Event 124900 finish == 4min 25s: 0.0021217s/event
+
+== Event 125000 finish == 4min 26s: 0.002128s/event
+
+== Event 125100 finish == 4min 26s: 0.0021263s/event
+
+== Event 125200 finish == 4min 26s: 0.0021246s/event
+
+== Event 125300 finish == 4min 26s: 0.00212291s/event
+
+== Event 125400 finish == 4min 26s: 0.00212121s/event
+
+== Event 125500 finish == 4min 26s: 0.00211952s/event
+
+== Event 125600 finish == 4min 26s: 0.00211783s/event
+
+== Event 125700 finish == 4min 26s: 0.00211615s/event
+
+== Event 125800 finish == 4min 27s: 0.00212242s/event
+
+== Event 125900 finish == 4min 27s: 0.00212073s/event
+
+== Event 126000 finish == 4min 27s: 0.00211905s/event
+
+== Event 126100 finish == 4min 27s: 0.00211737s/event
+
+== Event 126200 finish == 4min 27s: 0.00211569s/event
+
+== Event 126300 finish == 4min 27s: 0.00211401s/event
+
+== Event 126400 finish == 4min 27s: 0.00211234s/event
+
+== Event 126500 finish == 4min 28s: 0.00211858s/event
+
+== Event 126600 finish == 4min 28s: 0.0021169s/event
+
+== Event 126700 finish == 4min 28s: 0.00211523s/event
+
+== Event 126800 finish == 4min 28s: 0.00211356s/event
+
+== Event 126900 finish == 4min 28s: 0.0021119s/event
+
+== Event 127000 finish == 4min 28s: 0.00211024s/event
+
+== Event 127100 finish == 4min 28s: 0.00210858s/event
+
+== Event 127200 finish == 4min 28s: 0.00210692s/event
+
+== Event 127300 finish == 4min 28s: 0.00210526s/event
+
+== Event 127400 finish == 4min 28s: 0.00210361s/event
+
+== Event 127500 finish == 4min 29s: 0.0021098s/event
+
+== Event 127600 finish == 4min 29s: 0.00210815s/event
+
+== Event 127700 finish == 4min 29s: 0.0021065s/event
+
+== Event 127800 finish == 4min 29s: 0.00210485s/event
+
+== Event 127900 finish == 4min 29s: 0.00210321s/event
+
+== Event 128000 finish == 4min 29s: 0.00210156s/event
+
+== Event 128100 finish == 4min 29s: 0.00209992s/event
+
+== Event 128200 finish == 4min 29s: 0.00209828s/event
+
+== Event 128300 finish == 4min 30s: 0.00210444s/event
+
+== Event 128400 finish == 4min 30s: 0.0021028s/event
+
+== Event 128500 finish == 4min 30s: 0.00210117s/event
+
+== Event 128600 finish == 4min 30s: 0.00209953s/event
+
+== Event 128700 finish == 4min 30s: 0.0020979s/event
+
+== Event 128800 finish == 4min 30s: 0.00209627s/event
+
+== Event 128900 finish == 4min 30s: 0.00209465s/event
+
+== Event 129000 finish == 4min 31s: 0.00210078s/event
+
+== Event 129100 finish == 4min 31s: 0.00209915s/event
+
+== Event 129200 finish == 4min 31s: 0.00209752s/event
+
+== Event 129300 finish == 4min 31s: 0.0020959s/event
+
+== Event 129400 finish == 4min 31s: 0.00209428s/event
+
+== Event 129500 finish == 4min 31s: 0.00209266s/event
+
+== Event 129600 finish == 4min 31s: 0.00209105s/event
+
+== Event 129700 finish == 4min 31s: 0.00208944s/event
+
+== Event 129800 finish == 4min 31s: 0.00208783s/event
+
+== Event 129900 finish == 4min 31s: 0.00208622s/event
+
+== Event 130000 finish == 4min 32s: 0.00209231s/event
+
+== Event 130100 finish == 4min 32s: 0.0020907s/event
+
+== Event 130200 finish == 4min 32s: 0.00208909s/event
+
+== Event 130300 finish == 4min 32s: 0.00208749s/event
+
+== Event 130400 finish == 4min 32s: 0.00208589s/event
+
+== Event 130500 finish == 4min 33s: 0.00209195s/event
+
+== Event 130600 finish == 4min 33s: 0.00209035s/event
+
+== Event 130700 finish == 4min 33s: 0.00208875s/event
+
+== Event 130800 finish == 4min 33s: 0.00208716s/event
+
+== Event 130900 finish == 4min 33s: 0.00208556s/event
+
+== Event 131000 finish == 4min 33s: 0.00208397s/event
+
+== Event 131100 finish == 4min 33s: 0.00208238s/event
+
+== Event 131200 finish == 4min 33s: 0.00208079s/event
+
+== Event 131300 finish == 4min 34s: 0.00208682s/event
+
+== Event 131400 finish == 4min 34s: 0.00208524s/event
+
+== Event 131500 finish == 4min 34s: 0.00208365s/event
+
+== Event 131600 finish == 4min 34s: 0.00208207s/event
+
+== Event 131700 finish == 4min 34s: 0.00208049s/event
+
+== Event 131800 finish == 4min 34s: 0.00207891s/event
+
+== Event 131900 finish == 4min 35s: 0.00208491s/event
+
+== Event 132000 finish == 4min 35s: 0.00208333s/event
+
+== Event 132100 finish == 4min 35s: 0.00208176s/event
+
+== Event 132200 finish == 4min 35s: 0.00208018s/event
+
+== Event 132300 finish == 4min 35s: 0.00207861s/event
+
+== Event 132400 finish == 4min 36s: 0.00208459s/event
+
+== Event 132500 finish == 4min 36s: 0.00208302s/event
+
+== Event 132600 finish == 4min 36s: 0.00208145s/event
+
+== Event 132700 finish == 4min 36s: 0.00207988s/event
+
+== Event 132800 finish == 4min 36s: 0.00207831s/event
+
+== Event 132900 finish == 4min 36s: 0.00207675s/event
+
+== Event 133000 finish == 4min 36s: 0.00207519s/event
+
+== Event 133100 finish == 4min 36s: 0.00207363s/event
+
+== Event 133200 finish == 4min 36s: 0.00207207s/event
+
+== Event 133300 finish == 4min 36s: 0.00207052s/event
+
+== Event 133400 finish == 4min 37s: 0.00207646s/event
+
+== Event 133500 finish == 4min 37s: 0.00207491s/event
+
+== Event 133600 finish == 4min 37s: 0.00207335s/event
+
+== Event 133700 finish == 4min 37s: 0.0020718s/event
+
+== Event 133800 finish == 4min 37s: 0.00207025s/event
+
+== Event 133900 finish == 4min 37s: 0.00206871s/event
+
+== Event 134000 finish == 4min 37s: 0.00206716s/event
+
+== Event 134100 finish == 4min 38s: 0.00207308s/event
+
+== Event 134200 finish == 4min 38s: 0.00207154s/event
+
+== Event 134300 finish == 4min 38s: 0.00206999s/event
+
+== Event 134400 finish == 4min 38s: 0.00206845s/event
+
+== Event 134500 finish == 4min 38s: 0.00206691s/event
+
+== Event 134600 finish == 4min 38s: 0.00206538s/event
+
+== Event 134700 finish == 4min 38s: 0.00206385s/event
+
+== Event 134800 finish == 4min 38s: 0.00206231s/event
+
+== Event 134900 finish == 4min 38s: 0.00206079s/event
+
+== Event 135000 finish == 4min 39s: 0.00206667s/event
+
+== Event 135100 finish == 4min 39s: 0.00206514s/event
+
+== Event 135200 finish == 4min 39s: 0.00206361s/event
+
+== Event 135300 finish == 4min 39s: 0.00206208s/event
+
+== Event 135400 finish == 4min 39s: 0.00206056s/event
+
+== Event 135500 finish == 4min 40s: 0.00206642s/event
+
+== Event 135600 finish == 4min 40s: 0.0020649s/event
+
+== Event 135700 finish == 4min 40s: 0.00206338s/event
+
+== Event 135800 finish == 4min 40s: 0.00206186s/event
+
+== Event 135900 finish == 4min 40s: 0.00206034s/event
+
+== Event 136000 finish == 4min 40s: 0.00205882s/event
+
+== Event 136100 finish == 4min 40s: 0.00205731s/event
+
+== Event 136200 finish == 4min 40s: 0.0020558s/event
+
+== Event 136300 finish == 4min 40s: 0.00205429s/event
+
+== Event 136400 finish == 4min 41s: 0.00206012s/event
+
+== Event 136500 finish == 4min 41s: 0.00205861s/event
+
+== Event 136600 finish == 4min 41s: 0.0020571s/event
+
+== Event 136700 finish == 4min 41s: 0.0020556s/event
+
+== Event 136800 finish == 4min 41s: 0.00205409s/event
+
+== Event 136900 finish == 4min 41s: 0.00205259s/event
+
+== Event 137000 finish == 4min 41s: 0.00205109s/event
+
+== Event 137100 finish == 4min 42s: 0.00205689s/event
+
+== Event 137200 finish == 4min 42s: 0.00205539s/event
+
+== Event 137300 finish == 4min 42s: 0.0020539s/event
+
+== Event 137400 finish == 4min 42s: 0.0020524s/event
+
+== Event 137500 finish == 4min 42s: 0.00205091s/event
+
+== Event 137600 finish == 4min 42s: 0.00204942s/event
+
+== Event 137700 finish == 4min 42s: 0.00204793s/event
+
+== Event 137800 finish == 4min 42s: 0.00204644s/event
+
+== Event 137900 finish == 4min 43s: 0.00205221s/event
+
+== Event 138000 finish == 4min 43s: 0.00205072s/event
+
+== Event 138100 finish == 4min 43s: 0.00204924s/event
+
+== Event 138200 finish == 4min 43s: 0.00204776s/event
+
+== Event 138300 finish == 4min 43s: 0.00204628s/event
+
+== Event 138400 finish == 4min 43s: 0.0020448s/event
+
+== Event 138500 finish == 4min 43s: 0.00204332s/event
+
+== Event 138600 finish == 4min 44s: 0.00204906s/event
+
+== Event 138700 finish == 4min 44s: 0.00204758s/event
+
+== Event 138800 finish == 4min 44s: 0.00204611s/event
+
+== Event 138900 finish == 4min 44s: 0.00204464s/event
+
+== Event 139000 finish == 4min 44s: 0.00204317s/event
+
+== Event 139100 finish == 4min 44s: 0.0020417s/event
+
+== Event 139200 finish == 4min 44s: 0.00204023s/event
+
+== Event 139300 finish == 4min 44s: 0.00203877s/event
+
+== Event 139400 finish == 4min 44s: 0.0020373s/event
+
+== Event 139500 finish == 4min 44s: 0.00203584s/event
+
+== Event 139600 finish == 4min 44s: 0.00203438s/event
+
+== Event 139700 finish == 4min 45s: 0.00204009s/event
+
+== Event 139800 finish == 4min 45s: 0.00203863s/event
+
+== Event 139900 finish == 4min 45s: 0.00203717s/event
+
+== Event 140000 finish == 4min 45s: 0.00203571s/event
+
+== Event 140100 finish == 4min 45s: 0.00203426s/event
+
+== Event 140200 finish == 4min 45s: 0.00203281s/event
+
+== Event 140300 finish == 4min 45s: 0.00203136s/event
+
+== Event 140400 finish == 4min 46s: 0.00203704s/event
+
+== Event 140500 finish == 4min 46s: 0.00203559s/event
+
+== Event 140600 finish == 4min 46s: 0.00203414s/event
+
+== Event 140700 finish == 4min 46s: 0.00203269s/event
+
+== Event 140800 finish == 4min 46s: 0.00203125s/event
+
+== Event 140900 finish == 4min 46s: 0.00202981s/event
+
+== Event 141000 finish == 4min 46s: 0.00202837s/event
+
+== Event 141100 finish == 4min 46s: 0.00202693s/event
+
+== Event 141200 finish == 4min 47s: 0.00203258s/event
+
+== Event 141300 finish == 4min 47s: 0.00203114s/event
+
+== Event 141400 finish == 4min 47s: 0.0020297s/event
+
+== Event 141500 finish == 4min 47s: 0.00202827s/event
+
+== Event 141600 finish == 4min 47s: 0.00202684s/event
+
+== Event 141700 finish == 4min 47s: 0.00202541s/event
+
+== Event 141800 finish == 4min 47s: 0.00202398s/event
+
+== Event 141900 finish == 4min 47s: 0.00202255s/event
+
+== Event 142000 finish == 4min 47s: 0.00202113s/event
+
+== Event 142100 finish == 4min 48s: 0.00202674s/event
+
+== Event 142200 finish == 4min 48s: 0.00202532s/event
+
+== Event 142300 finish == 4min 48s: 0.00202389s/event
+
+== Event 142400 finish == 4min 48s: 0.00202247s/event
+
+== Event 142500 finish == 4min 48s: 0.00202105s/event
+
+== Event 142600 finish == 4min 48s: 0.00201964s/event
+
+== Event 142700 finish == 4min 48s: 0.00201822s/event
+
+== Event 142800 finish == 4min 49s: 0.00202381s/event
+
+== Event 142900 finish == 4min 49s: 0.00202239s/event
+
+== Event 143000 finish == 4min 49s: 0.00202098s/event
+
+== Event 143100 finish == 4min 49s: 0.00201957s/event
+
+== Event 143200 finish == 4min 49s: 0.00201816s/event
+
+== Event 143300 finish == 4min 49s: 0.00201675s/event
+
+== Event 143400 finish == 4min 49s: 0.00201534s/event
+
+== Event 143500 finish == 4min 49s: 0.00201394s/event
+
+== Event 143600 finish == 4min 49s: 0.00201253s/event
+
+== Event 143700 finish == 4min 50s: 0.00201809s/event
+
+== Event 143800 finish == 4min 50s: 0.00201669s/event
+
+== Event 143900 finish == 4min 50s: 0.00201529s/event
+
+== Event 144000 finish == 4min 50s: 0.00201389s/event
+
+== Event 144100 finish == 4min 50s: 0.00201249s/event
+
+== Event 144200 finish == 4min 50s: 0.0020111s/event
+
+== Event 144300 finish == 4min 51s: 0.00201663s/event
+
+== Event 144400 finish == 4min 51s: 0.00201524s/event
+
+== Event 144500 finish == 4min 51s: 0.00201384s/event
+
+== Event 144600 finish == 4min 51s: 0.00201245s/event
+
+== Event 144700 finish == 4min 51s: 0.00201106s/event
+
+== Event 144800 finish == 4min 51s: 0.00200967s/event
+
+== Event 144900 finish == 4min 51s: 0.00200828s/event
+
+== Event 145000 finish == 4min 51s: 0.0020069s/event
+
+== Event 145100 finish == 4min 51s: 0.00200551s/event
+
+== Event 145200 finish == 4min 51s: 0.00200413s/event
+
+== Event 145300 finish == 4min 52s: 0.00200964s/event
+
+== Event 145400 finish == 4min 52s: 0.00200825s/event
+
+== Event 145500 finish == 4min 52s: 0.00200687s/event
+
+== Event 145600 finish == 4min 52s: 0.00200549s/event
+
+== Event 145700 finish == 4min 52s: 0.00200412s/event
+
+== Event 145800 finish == 4min 52s: 0.00200274s/event
+
+== Event 145900 finish == 4min 52s: 0.00200137s/event
+
+== Event 146000 finish == 4min 52s: 0.002s/event
+
+== Event 146100 finish == 4min 52s: 0.00199863s/event
+
+== Event 146200 finish == 4min 53s: 0.0020041s/event
+
+== Event 146300 finish == 4min 53s: 0.00200273s/event
+
+== Event 146400 finish == 4min 53s: 0.00200137s/event
+
+== Event 146500 finish == 4min 53s: 0.002s/event
+
+== Event 146600 finish == 4min 53s: 0.00199864s/event
+
+== Event 146700 finish == 4min 53s: 0.00199727s/event
+
+== Event 146800 finish == 4min 53s: 0.00199591s/event
+
+== Event 146900 finish == 4min 54s: 0.00200136s/event
+
+== Event 147000 finish == 4min 54s: 0.002s/event
+
+== Event 147100 finish == 4min 54s: 0.00199864s/event
+
+== Event 147200 finish == 4min 54s: 0.00199728s/event
+
+== Event 147300 finish == 4min 54s: 0.00199593s/event
+
+== Event 147400 finish == 4min 54s: 0.00199457s/event
+
+== Event 147500 finish == 4min 54s: 0.00199322s/event
+
+== Event 147600 finish == 4min 54s: 0.00199187s/event
+
+== Event 147700 finish == 4min 54s: 0.00199052s/event
+
+== Event 147800 finish == 4min 54s: 0.00198917s/event
+
+== Event 147900 finish == 4min 55s: 0.00199459s/event
+
+== Event 148000 finish == 4min 55s: 0.00199324s/event
+
+== Event 148100 finish == 4min 55s: 0.0019919s/event
+
+== Event 148200 finish == 4min 55s: 0.00199055s/event
+
+== Event 148300 finish == 4min 55s: 0.00198921s/event
+
+== Event 148400 finish == 4min 55s: 0.00198787s/event
+
+== Event 148500 finish == 4min 56s: 0.00199327s/event
+
+== Event 148600 finish == 4min 56s: 0.00199192s/event
+
+== Event 148700 finish == 4min 56s: 0.00199059s/event
+
+== Event 148800 finish == 4min 56s: 0.00198925s/event
+
+== Event 148900 finish == 4min 56s: 0.00198791s/event
+
+== Event 149000 finish == 4min 56s: 0.00198658s/event
+
+== Event 149100 finish == 4min 56s: 0.00198524s/event
+
+== Event 149200 finish == 4min 56s: 0.00198391s/event
+
+== Event 149300 finish == 4min 56s: 0.00198259s/event
+
+== Event 149400 finish == 4min 56s: 0.00198126s/event
+
+== Event 149500 finish == 4min 57s: 0.00198662s/event
+
+== Event 149600 finish == 4min 57s: 0.00198529s/event
+
+== Event 149700 finish == 4min 57s: 0.00198397s/event
+
+== Event 149800 finish == 4min 57s: 0.00198264s/event
+
+== Event 149900 finish == 4min 57s: 0.00198132s/event
+
+== Event 150000 finish == 4min 57s: 0.00198s/event
+
+== Event 150100 finish == 4min 57s: 0.00197868s/event
+
+== Event 150200 finish == 4min 58s: 0.00198402s/event
+
+== Event 150300 finish == 4min 58s: 0.0019827s/event
+
+== Event 150400 finish == 4min 58s: 0.00198138s/event
+
+== Event 150500 finish == 4min 58s: 0.00198007s/event
+
+== Event 150600 finish == 4min 58s: 0.00197875s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16135043 (previous = 16125039)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16135043  Event 2582102  TimeStamp 20150516.  2712  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 150700 finish == 4min 58s: 0.00197744s/event
+
+== Event 150800 finish == 4min 59s: 0.00198276s/event
+
+== Event 150900 finish == 4min 59s: 0.00198144s/event
+
+== Event 151000 finish == 4min 59s: 0.00198013s/event
+
+== Event 151100 finish == 4min 59s: 0.00197882s/event
+
+== Event 151200 finish == 4min 59s: 0.00197751s/event
+
+== Event 151300 finish == 4min 59s: 0.00197621s/event
+
+== Event 151400 finish == 5min 0s: 0.00198151s/event
+
+== Event 151500 finish == 5min 0s: 0.0019802s/event
+
+== Event 151600 finish == 5min 0s: 0.00197889s/event
+
+== Event 151700 finish == 5min 0s: 0.00197759s/event
+
+== Event 151800 finish == 5min 0s: 0.00197628s/event
+
+== Event 151900 finish == 5min 1s: 0.00198157s/event
+
+== Event 152000 finish == 5min 1s: 0.00198026s/event
+
+== Event 152100 finish == 5min 1s: 0.00197896s/event
+
+== Event 152200 finish == 5min 1s: 0.00197766s/event
+
+== Event 152300 finish == 5min 1s: 0.00197636s/event
+
+== Event 152400 finish == 5min 1s: 0.00197507s/event
+
+== Event 152500 finish == 5min 1s: 0.00197377s/event
+
+== Event 152600 finish == 5min 2s: 0.00197903s/event
+
+== Event 152700 finish == 5min 2s: 0.00197773s/event
+
+== Event 152800 finish == 5min 2s: 0.00197644s/event
+
+== Event 152900 finish == 5min 2s: 0.00197515s/event
+
+== Event 153000 finish == 5min 2s: 0.00197386s/event
+
+== Event 153100 finish == 5min 2s: 0.00197257s/event
+
+== Event 153200 finish == 5min 2s: 0.00197128s/event
+
+== Event 153300 finish == 5min 2s: 0.00196999s/event
+
+== Event 153400 finish == 5min 3s: 0.00197523s/event
+
+== Event 153500 finish == 5min 3s: 0.00197394s/event
+
+== Event 153600 finish == 5min 3s: 0.00197266s/event
+
+== Event 153700 finish == 5min 3s: 0.00197137s/event
+
+== Event 153800 finish == 5min 3s: 0.00197009s/event
+
+== Event 153900 finish == 5min 4s: 0.00197531s/event
+
+== Event 154000 finish == 5min 4s: 0.00197403s/event
+
+== Event 154100 finish == 5min 4s: 0.00197274s/event
+
+== Event 154200 finish == 5min 4s: 0.00197147s/event
+
+== Event 154300 finish == 5min 4s: 0.00197019s/event
+
+== Event 154400 finish == 5min 4s: 0.00196891s/event
+
+== Event 154500 finish == 5min 5s: 0.00197411s/event
+
+== Event 154600 finish == 5min 5s: 0.00197283s/event
+
+== Event 154700 finish == 5min 5s: 0.00197156s/event
+
+== Event 154800 finish == 5min 5s: 0.00197028s/event
+
+== Event 154900 finish == 5min 5s: 0.00196901s/event
+
+== Event 155000 finish == 5min 5s: 0.00196774s/event
+
+== Event 155100 finish == 5min 5s: 0.00196647s/event
+
+== Event 155200 finish == 5min 5s: 0.00196521s/event
+
+== Event 155300 finish == 5min 6s: 0.00197038s/event
+
+== Event 155400 finish == 5min 6s: 0.00196911s/event
+
+== Event 155500 finish == 5min 6s: 0.00196785s/event
+
+== Event 155600 finish == 5min 6s: 0.00196658s/event
+
+== Event 155700 finish == 5min 6s: 0.00196532s/event
+
+== Event 155800 finish == 5min 6s: 0.00196406s/event
+
+== Event 155900 finish == 5min 7s: 0.00196921s/event
+
+== Event 156000 finish == 5min 7s: 0.00196795s/event
+
+== Event 156100 finish == 5min 7s: 0.00196669s/event
+
+== Event 156200 finish == 5min 7s: 0.00196543s/event
+
+== Event 156300 finish == 5min 7s: 0.00196417s/event
+
+== Event 156400 finish == 5min 7s: 0.00196292s/event
+
+== Event 156500 finish == 5min 8s: 0.00196805s/event
+
+== Event 156600 finish == 5min 8s: 0.00196679s/event
+
+== Event 156700 finish == 5min 8s: 0.00196554s/event
+
+== Event 156800 finish == 5min 8s: 0.00196429s/event
+
+== Event 156900 finish == 5min 8s: 0.00196303s/event
+
+== Event 157000 finish == 5min 8s: 0.00196178s/event
+
+== Event 157100 finish == 5min 8s: 0.00196053s/event
+
+== Event 157200 finish == 5min 9s: 0.00196565s/event
+
+== Event 157300 finish == 5min 9s: 0.0019644s/event
+
+== Event 157400 finish == 5min 9s: 0.00196315s/event
+
+== Event 157500 finish == 5min 9s: 0.0019619s/event
+
+== Event 157600 finish == 5min 9s: 0.00196066s/event
+
+== Event 157700 finish == 5min 9s: 0.00195942s/event
+
+== Event 157800 finish == 5min 10s: 0.00196451s/event
+
+== Event 157900 finish == 5min 10s: 0.00196327s/event
+
+== Event 158000 finish == 5min 10s: 0.00196203s/event
+
+== Event 158100 finish == 5min 10s: 0.00196078s/event
+
+== Event 158200 finish == 5min 10s: 0.00195954s/event
+
+== Event 158300 finish == 5min 10s: 0.00195831s/event
+
+== Event 158400 finish == 5min 10s: 0.00195707s/event
+
+== Event 158500 finish == 5min 11s: 0.00196215s/event
+
+== Event 158600 finish == 5min 11s: 0.00196091s/event
+
+== Event 158700 finish == 5min 11s: 0.00195967s/event
+
+== Event 158800 finish == 5min 11s: 0.00195844s/event
+
+== Event 158900 finish == 5min 11s: 0.00195721s/event
+
+== Event 159000 finish == 5min 11s: 0.00195597s/event
+
+== Event 159100 finish == 5min 12s: 0.00196103s/event
+
+== Event 159200 finish == 5min 12s: 0.0019598s/event
+
+== Event 159300 finish == 5min 12s: 0.00195857s/event
+
+== Event 159400 finish == 5min 12s: 0.00195734s/event
+
+== Event 159500 finish == 5min 12s: 0.00195611s/event
+
+== Event 159600 finish == 5min 12s: 0.00195489s/event
+
+== Event 159700 finish == 5min 13s: 0.00195992s/event
+
+== Event 159800 finish == 5min 13s: 0.0019587s/event
+
+== Event 159900 finish == 5min 13s: 0.00195747s/event
+
+== Event 160000 finish == 5min 13s: 0.00195625s/event
+
+== Event 160100 finish == 5min 13s: 0.00195503s/event
+
+== Event 160200 finish == 5min 13s: 0.00195381s/event
+
+== Event 160300 finish == 5min 14s: 0.00195883s/event
+
+== Event 160400 finish == 5min 14s: 0.00195761s/event
+
+== Event 160500 finish == 5min 14s: 0.00195639s/event
+
+== Event 160600 finish == 5min 14s: 0.00195517s/event
+
+== Event 160700 finish == 5min 14s: 0.00195395s/event
+
+== Event 160800 finish == 5min 15s: 0.00195896s/event
+
+== Event 160900 finish == 5min 15s: 0.00195774s/event
+
+== Event 161000 finish == 5min 15s: 0.00195652s/event
+
+== Event 161100 finish == 5min 15s: 0.00195531s/event
+
+== Event 161200 finish == 5min 15s: 0.00195409s/event
+
+== Event 161300 finish == 5min 15s: 0.00195288s/event
+
+== Event 161400 finish == 5min 16s: 0.00195787s/event
+
+== Event 161500 finish == 5min 16s: 0.00195666s/event
+
+== Event 161600 finish == 5min 16s: 0.00195545s/event
+
+== Event 161700 finish == 5min 16s: 0.00195424s/event
+
+== Event 161800 finish == 5min 16s: 0.00195303s/event
+
+== Event 161900 finish == 5min 16s: 0.00195182s/event
+
+== Event 162000 finish == 5min 16s: 0.00195062s/event
+
+== Event 162100 finish == 5min 16s: 0.00194941s/event
+
+== Event 162200 finish == 5min 17s: 0.00195438s/event
+
+== Event 162300 finish == 5min 17s: 0.00195317s/event
+
+== Event 162400 finish == 5min 17s: 0.00195197s/event
+
+== Event 162500 finish == 5min 17s: 0.00195077s/event
+
+== Event 162600 finish == 5min 17s: 0.00194957s/event
+
+== Event 162700 finish == 5min 17s: 0.00194837s/event
+
+== Event 162800 finish == 5min 18s: 0.00195332s/event
+
+== Event 162900 finish == 5min 18s: 0.00195212s/event
+
+== Event 163000 finish == 5min 18s: 0.00195092s/event
+
+== Event 163100 finish == 5min 18s: 0.00194972s/event
+
+== Event 163200 finish == 5min 18s: 0.00194853s/event
+
+== Event 163300 finish == 5min 18s: 0.00194734s/event
+
+== Event 163400 finish == 5min 18s: 0.00194614s/event
+
+== Event 163500 finish == 5min 19s: 0.00195107s/event
+
+== Event 163600 finish == 5min 19s: 0.00194988s/event
+
+== Event 163700 finish == 5min 19s: 0.00194869s/event
+
+== Event 163800 finish == 5min 19s: 0.0019475s/event
+
+== Event 163900 finish == 5min 19s: 0.00194631s/event
+
+== Event 164000 finish == 5min 19s: 0.00194512s/event
+
+== Event 164100 finish == 5min 20s: 0.00195003s/event
+
+== Event 164200 finish == 5min 20s: 0.00194884s/event
+
+== Event 164300 finish == 5min 20s: 0.00194766s/event
+
+== Event 164400 finish == 5min 20s: 0.00194647s/event
+
+== Event 164500 finish == 5min 20s: 0.00194529s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16137039 (previous = 16135043)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16137039  Event 3572784  TimeStamp 20150517.230439  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 164600 finish == 5min 20s: 0.00194411s/event
+
+== Event 164700 finish == 5min 21s: 0.001949s/event
+
+== Event 164800 finish == 5min 21s: 0.00194782s/event
+
+== Event 164900 finish == 5min 21s: 0.00194663s/event
+
+== Event 165000 finish == 5min 22s: 0.00195152s/event
+
+== Event 165100 finish == 5min 22s: 0.00195033s/event
+
+== Event 165200 finish == 5min 22s: 0.00194915s/event
+
+== Event 165300 finish == 5min 22s: 0.00194797s/event
+
+== Event 165400 finish == 5min 23s: 0.00195284s/event
+
+== Event 165500 finish == 5min 23s: 0.00195166s/event
+
+== Event 165600 finish == 5min 23s: 0.00195048s/event
+
+== Event 165700 finish == 5min 23s: 0.00194931s/event
+
+== Event 165800 finish == 5min 24s: 0.00195416s/event
+
+== Event 165900 finish == 5min 24s: 0.00195298s/event
+
+== Event 166000 finish == 5min 24s: 0.00195181s/event
+
+== Event 166100 finish == 5min 25s: 0.00195665s/event
+
+== Event 166200 finish == 5min 25s: 0.00195548s/event
+
+== Event 166300 finish == 5min 25s: 0.0019543s/event
+
+== Event 166400 finish == 5min 25s: 0.00195312s/event
+
+== Event 166500 finish == 5min 26s: 0.00195796s/event
+
+== Event 166600 finish == 5min 26s: 0.00195678s/event
+
+== Event 166700 finish == 5min 26s: 0.00195561s/event
+
+== Event 166800 finish == 5min 26s: 0.00195444s/event
+
+== Event 166900 finish == 5min 27s: 0.00195926s/event
+
+== Event 167000 finish == 5min 27s: 0.00195808s/event
+
+== Event 167100 finish == 5min 27s: 0.00195691s/event
+
+== Event 167200 finish == 5min 27s: 0.00195574s/event
+
+== Event 167300 finish == 5min 28s: 0.00196055s/event
+
+== Event 167400 finish == 5min 28s: 0.00195938s/event
+
+== Event 167500 finish == 5min 28s: 0.00195821s/event
+
+== Event 167600 finish == 5min 28s: 0.00195704s/event
+
+== Event 167700 finish == 5min 29s: 0.00196184s/event
+
+== Event 167800 finish == 5min 29s: 0.00196067s/event
+
+== Event 167900 finish == 5min 29s: 0.0019595s/event
+
+== Event 168000 finish == 5min 29s: 0.00195833s/event
+
+== Event 168100 finish == 5min 30s: 0.00196312s/event
+
+== Event 168200 finish == 5min 30s: 0.00196195s/event
+
+== Event 168300 finish == 5min 30s: 0.00196078s/event
+
+== Event 168400 finish == 5min 30s: 0.00195962s/event
+
+== Event 168500 finish == 5min 31s: 0.00196439s/event
+
+== Event 168600 finish == 5min 31s: 0.00196323s/event
+
+== Event 168700 finish == 5min 31s: 0.00196206s/event
+
+== Event 168800 finish == 5min 31s: 0.0019609s/event
+
+== Event 168900 finish == 5min 31s: 0.00195974s/event
+
+== Event 169000 finish == 5min 32s: 0.0019645s/event
+
+== Event 169100 finish == 5min 32s: 0.00196334s/event
+
+== Event 169200 finish == 5min 32s: 0.00196217s/event
+
+== Event 169300 finish == 5min 32s: 0.00196102s/event
+
+== Event 169400 finish == 5min 33s: 0.00196576s/event
+
+== Event 169500 finish == 5min 33s: 0.0019646s/event
+
+== Event 169600 finish == 5min 33s: 0.00196344s/event
+
+== Event 169700 finish == 5min 33s: 0.00196229s/event
+
+== Event 169800 finish == 5min 34s: 0.00196702s/event
+
+== Event 169900 finish == 5min 34s: 0.00196586s/event
+
+== Event 170000 finish == 5min 34s: 0.00196471s/event
+
+== Event 170100 finish == 5min 34s: 0.00196355s/event
+
+== Event 170200 finish == 5min 35s: 0.00196827s/event
+
+== Event 170300 finish == 5min 35s: 0.00196712s/event
+
+== Event 170400 finish == 5min 35s: 0.00196596s/event
+
+== Event 170500 finish == 5min 35s: 0.00196481s/event
+
+== Event 170600 finish == 5min 36s: 0.00196952s/event
+
+== Event 170700 finish == 5min 36s: 0.00196837s/event
+
+== Event 170800 finish == 5min 36s: 0.00196721s/event
+
+== Event 170900 finish == 5min 36s: 0.00196606s/event
+
+== Event 171000 finish == 5min 36s: 0.00196491s/event
+
+== Event 171100 finish == 5min 37s: 0.00196961s/event
+
+== Event 171200 finish == 5min 37s: 0.00196846s/event
+
+== Event 171300 finish == 5min 37s: 0.00196731s/event
+
+== Event 171400 finish == 5min 37s: 0.00196616s/event
+
+== Event 171500 finish == 5min 38s: 0.00197085s/event
+
+== Event 171600 finish == 5min 38s: 0.0019697s/event
+
+== Event 171700 finish == 5min 38s: 0.00196855s/event
+
+== Event 171800 finish == 5min 38s: 0.0019674s/event
+
+== Event 171900 finish == 5min 39s: 0.00197208s/event
+
+== Event 172000 finish == 5min 39s: 0.00197093s/event
+
+== Event 172100 finish == 5min 39s: 0.00196979s/event
+
+== Event 172200 finish == 5min 39s: 0.00196864s/event
+
+== Event 172300 finish == 5min 40s: 0.0019733s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16153011 (previous = 16137039)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16153011  Event  4550  TimeStamp 20150602. 84909  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 172400 finish == 5min 40s: 0.00197216s/event
+
+== Event 172500 finish == 5min 40s: 0.00197101s/event
+
+== Event 172600 finish == 5min 41s: 0.00197567s/event
+
+== Event 172700 finish == 5min 41s: 0.00197452s/event
+
+== Event 172800 finish == 5min 41s: 0.00197338s/event
+
+== Event 172900 finish == 5min 41s: 0.00197224s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16156043 (previous = 16153011)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16156043  Event 2289650  TimeStamp 20150605.220628  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 173000 finish == 5min 42s: 0.00197688s/event
+
+== Event 173100 finish == 5min 42s: 0.00197574s/event
+
+== Event 173200 finish == 5min 42s: 0.0019746s/event
+
+== Event 173300 finish == 5min 42s: 0.00197346s/event
+
+== Event 173400 finish == 5min 43s: 0.00197809s/event
+
+== Event 173500 finish == 5min 43s: 0.00197695s/event
+St_db_Maker:INFO  -  +++ New RunNumber found=16158051 (previous = 16156043)
+St_db_Maker:INFO  - *********** Event Info **********************
+St_db_Maker:INFO  - 	Run: 	16158051  Event 739602  TimeStamp 20150607.211647  Bunch 0:0
+St_db_Maker:INFO  - 	 EvtSize: 0 	InpTrig:    0 OutTrig:    0
+St_db_Maker:INFO  - *********************************************
+
+== Event 173600 finish == 5min 43s: 0.00197581s/event
+
+== Event 173700 finish == 5min 44s: 0.00198043s/event
+
+== Event 173800 finish == 5min 44s: 0.00197929s/event
+
+== Event 173900 finish == 5min 44s: 0.00197815s/event
+
+== Event 174000 finish == 5min 45s: 0.00198276s/event
+
+== Event 174100 finish == 5min 45s: 0.00198162s/event
+
+== Event 174200 finish == 5min 45s: 0.00198048s/event
+
+== Event 174300 finish == 5min 45s: 0.00197935s/event
+
+== Event 174400 finish == 5min 45s: 0.00197821s/event
+
+== Event 174500 finish == 5min 46s: 0.00198281s/event
+
+== Event 174600 finish == 5min 46s: 0.00198167s/event
+
+== Event 174700 finish == 5min 46s: 0.00198054s/event
+
+== Event 174800 finish == 5min 46s: 0.00197941s/event
+
+== Event 174900 finish == 5min 47s: 0.00198399s/event
+
+== Event 175000 finish == 5min 47s: 0.00198286s/event
+
+== Event 175100 finish == 5min 47s: 0.00198172s/event
+
+== Event 175200 finish == 5min 47s: 0.00198059s/event
+
+== Event 175300 finish == 5min 48s: 0.00198517s/event
+
+== Event 175400 finish == 5min 48s: 0.00198404s/event
+
+== Event 175500 finish == 5min 48s: 0.00198291s/event
+
+== Event 175600 finish == 5min 48s: 0.00198178s/event
+
+== Event 175700 finish == 5min 49s: 0.00198634s/event
+
+== Event 175800 finish == 5min 49s: 0.00198521s/event
+
+== Event 175900 finish == 5min 49s: 0.00198408s/event
+
+== Event 176000 finish == 5min 49s: 0.00198295s/event
+
+== Event 176100 finish == 5min 49s: 0.00198183s/event
+
+== Event 176200 finish == 5min 50s: 0.00198638s/event
+
+== Event 176300 finish == 5min 50s: 0.00198525s/event
+
+== Event 176400 finish == 5min 50s: 0.00198413s/event
+
+== Event 176500 finish == 5min 50s: 0.001983s/event
+
+== Event 176600 finish == 5min 51s: 0.00198754s/event
+
+== Event 176700 finish == 5min 51s: 0.00198642s/event
+
+== Event 176800 finish == 5min 51s: 0.00198529s/event
+
+== Event 176900 finish == 5min 51s: 0.00198417s/event
+
+== Event 177000 finish == 5min 52s: 0.0019887s/event
+
+== Event 177100 finish == 5min 52s: 0.00198758s/event
+
+== Event 177200 finish == 5min 52s: 0.00198646s/event
+
+== Event 177300 finish == 5min 52s: 0.00198534s/event
+
+== Event 177400 finish == 5min 52s: 0.00198422s/event
+
+== Event 177500 finish == 5min 53s: 0.00198873s/event
+
+== Event 177600 finish == 5min 53s: 0.00198761s/event
+
+== Event 177700 finish == 5min 53s: 0.00198649s/event
+
+== Event 177800 finish == 5min 53s: 0.00198538s/event
+
+== Event 177900 finish == 5min 54s: 0.00198988s/event
+
+== Event 178000 finish == 5min 54s: 0.00198876s/event
+
+== Event 178100 finish == 5min 54s: 0.00198765s/event
+
+== Event 178200 finish == 5min 54s: 0.00198653s/event
+
+== Event 178300 finish == 5min 55s: 0.00199103s/event
+
+== Event 178400 finish == 5min 55s: 0.00198991s/event
+
+== Event 178500 finish == 5min 55s: 0.0019888s/event
+
+== Event 178600 finish == 5min 55s: 0.00198768s/event
+
+== Event 178700 finish == 5min 55s: 0.00198657s/event
+
+== Event 178800 finish == 5min 56s: 0.00199105s/event
+
+== Event 178900 finish == 5min 56s: 0.00198994s/event
+
+== Event 179000 finish == 5min 56s: 0.00198883s/event
+
+== Event 179100 finish == 5min 56s: 0.00198772s/event
+
+== Event 179200 finish == 5min 57s: 0.00199219s/event
+
+== Event 179300 finish == 5min 57s: 0.00199108s/event
+
+== Event 179400 finish == 5min 57s: 0.00198997s/event
+
+== Event 179500 finish == 5min 57s: 0.00198886s/event
+
+== Event 179600 finish == 5min 58s: 0.00199332s/event
+
+== Event 179700 finish == 5min 58s: 0.00199221s/event
+
+== Event 179800 finish == 5min 58s: 0.0019911s/event
+
+== Event 179900 finish == 5min 58s: 0.00198999s/event
+
+== Event 180000 finish == 5min 59s: 0.00199444s/event
+
+== Event 180100 finish == 5min 59s: 0.00199334s/event
+
+== Event 180200 finish == 5min 59s: 0.00199223s/event
+
+== Event 180300 finish == 5min 59s: 0.00199113s/event
+
+== Event 180400 finish == 5min 59s: 0.00199002s/event
+
+== Event 180500 finish == 6min 0s: 0.00199446s/event
+
+== Event 180600 finish == 6min 0s: 0.00199336s/event
+
+== Event 180700 finish == 6min 0s: 0.00199225s/event
+
+== Event 180800 finish == 6min 0s: 0.00199115s/event
+
+== Event 180900 finish == 6min 1s: 0.00199558s/event
+
+== Event 181000 finish == 6min 1s: 0.00199448s/event
+
+== Event 181100 finish == 6min 1s: 0.00199337s/event
+
+== Event 181200 finish == 6min 1s: 0.00199227s/event
+
+== Event 181300 finish == 6min 2s: 0.00199669s/event
+
+== Event 181400 finish == 6min 2s: 0.00199559s/event
+
+== Event 181500 finish == 6min 2s: 0.00199449s/event
+
+== Event 181600 finish == 6min 3s: 0.0019989s/event
+
+== Event 181700 finish == 6min 3s: 0.0019978s/event
+
+== Event 181800 finish == 6min 3s: 0.0019967s/event
+
+== Event 181900 finish == 6min 3s: 0.0019956s/event
+
+== Event 182000 finish == 6min 3s: 0.00199451s/event
+****************************************** 
+Work done... now its time to close up shop!
+****************************************** 
+QA :INFO  - =================================================================================
+QA :INFO  - QAInfo:Chain            StBFChain::bfc                  Ast =362.29        Cpu =316.83 
+QA :INFO  - QAInfo:Maker StKFParticleAnalysisMaker::ana                  Ast = 61.27(16.9%) Cpu = 59.76(18.9%) 
+QA :INFO  - QAInfo:Maker    StDetectorDbMaker::detDb                Ast =  6.31( 1.7%) Cpu =  6.23( 2.0%) 
+QA :INFO  - QAInfo:Maker          St_db_Maker::db                   Ast = 26.33( 7.3%) Cpu = 23.77( 7.5%) 
+QA :INFO  - QAInfo:Maker       StPicoDstMaker::PicoDst              Ast =268.38(74.1%) Cpu =227.07(71.7%) 
+St_db_Maker::Init 
+Real time 0:00:01, CP time 0.280, 3 slices
+      MySQL::Init 
+Real time 0:00:01, CP time 0.310, 2 slices
+St_db_Maker::Make 
+Real time 0:00:21, CP time 20.520, 182595 slices
+      MySQL::Make 
+Real time 0:00:00, CP time 0.010, 585 slices
+      MySQL::Data 
+Real time 0:00:00, CP time 0.000
+StChain:INFO  - --------------Error Codes-------------------------
+StChain:INFO  -      nStOK   nStWarn    nStEOF    nStErr  nStFatal
+StChain:INFO  -     728104         0         0         0         0
+StChain:INFO  - --------------------------------------------------
+               StMemStat::Summary(calls)        Min        Aver         Max         RMS 
+=============================================================================================
+         StDetectorDbMaker(detDb)::Clear(182005)   -0.000061    0.000000    0.000137    0.000000
+         StDetectorDbMaker(detDb)::Make (182006)   -0.000061    0.000000    0.000137    0.000000
+   StKFParticleAnalysisMaker(ana)::Clear(182005)    0.000000    0.000000    0.000000    0.000000
+   StKFParticleAnalysisMaker(ana)::Make (182006)   -0.028687    0.000007    0.416992    0.001672
+          StPicoDstMaker(PicoDst)::Clear(182005)    0.000000    0.000000    0.000000    0.000000
+          StPicoDstMaker(PicoDst)::Make (182006)   -2.522049    0.000150   28.024689    0.067468
+                  St_db_Maker(db)::Clear(182005)   -1.199295   -0.000007    0.000137    0.002811
+                  St_db_Maker(db)::Make (182006)   -0.000183    0.000000    0.000183    0.000001
+---------------------------------------------------------------------------------------------
+                                   Total(8)   -2.522049    0.000151   28.024689    0.067548
+=============================================================================================
+BFC:INFO  - StBFChain::Finish :  Closing all writable TFiles   . . . . 
+BFC:INFO  - StBFChain::Finish : file KFParticleQA_999999.root has been closed
+BFC:INFO  - StBFChain::Finish : 1 files have been closed
+****************************************** 
+total number of events  182026
+****************************************** 
+BFC:INFO  - StDbConfigNodeImpl::printNumberStats() line=458 ******************** Number Stats ******************** 
+Total Number of Nodes        = 349
+Total Number of Tables       = 589
+Total Size of Data in Tables = 0 kBytes
+******************************************************
+
+BFC:INFO  - StDbManagerImpl::printTimeStats() line=1624 
+*************************** DataBase ClockTime Stats *************************** 
+Total Time in DB-API       = 1.06627	 sec
+ --------------------- In aggregate ------------------
+ - Prepare Nodes & Servers = 1.06627	 sec --> 100% of total
+ - Select & Retrieve data  = 0	 sec --> 0% of total
+ --------------- In MySQL C-API (approximate) ---------
+ - Connecting to Servers   = 0.103926	 sec --> 9.74668% of total
+ - SQL Query Times         = 0.710756	 sec --> 66.6579% of total
+ - socket transfer Times   = 0.0925298	 sec --> 8.67787% of total
+********************************************************************************
+
+
+This is the end of ROOT -- Goodbye
+
