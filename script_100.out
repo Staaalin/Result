@@ -1,0 +1,173 @@
+We are starting on node: spool1509.sdcc.bnl.gov
+HOME is not defined
+Using getent method
+HOME is now /star/u/svianping
+54809 We will spawn ourselves (/star/u/svianping/STAR_Files/KFParticle4Lambda/xml/sched07E293B94CAF1FD7FDCDC64DDAE3A27A_100.csh )
+54809 We BEGIN on [Mon Jul  1 12:06:03 EDT 2024]
+[1] 55145
+54809 We are waiting for 55145 
+55145 Stepping into the main SUMS wrapper program with []
+running: xrdcp --retry 3 root://xrdstar.rcf.bnl.gov:1095//home/starlib/home/starreco/reco/production_dAu200_2021/ReversedFullField/P23id/2021/185/22185004/st_physics_22185004_raw_7500012.picoDst.root /tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES/st_physics_22185004_raw_7500012.picoDst.root >& /dev/null
+xrdcp copy done: Mon Jul  1 12:06:04 EDT 2024
+Swapping $FILELIST with: /tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES/07E293B94CAF1FD7FDCDC64DDAE3A27A_100.local.list
+Copied 1 files from Xrootd, 1 succeeded (100 %)
++++++++++++local copy debug++++++++++++++++++++
+newFileList: /tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES/07E293B94CAF1FD7FDCDC64DDAE3A27A_100.local.list
+++++++++++++++++cat FILELIST+++++++++++++++++++
+/tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES/st_physics_22185004_raw_7500012.picoDst.root 18521
+++++++++++++++++++++find.++++++++++++++++++++++
+.
+./.output.log
+./INPUTFILES
+./INPUTFILES/st_physics_22185004_raw_7500012.picoDst.root
+./INPUTFILES/07E293B94CAF1FD7FDCDC64DDAE3A27A_100.local.list
+++++++++++++++++INPUTFILE Var++++++++++++++++++
+FILELIST=/tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES/07E293B94CAF1FD7FDCDC64DDAE3A27A_100.local.list
+INPUTFILECOUNT=1
+INPUTFILE0=/tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES/st_physics_22185004_raw_7500012.picoDst.root
+LocalInputFileDir=/tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES
+NewFILELIST=/tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES/07E293B94CAF1FD7FDCDC64DDAE3A27A_100.local.list
++++++++++++++++++++++++++++++++++++++++++++++++
+--------------------------------
+Simple Unified Meta Scheduler 1.10.50 we are starting in $SCRATCH : /home/tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100
+--------------------------------
+total 4
+drwxr-xr-x 2 svianping rhstar 4096 Jul  1 12:06 INPUTFILES
+/tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/INPUTFILES/07E293B94CAF1FD7FDCDC64DDAE3A27A_100.local.list
+
+         ----- STAR Group Login from /gpfs01/star/subsys-tpc/fisyak/STAR/packages/.DEV2/group/ -----
+
+Setting up STAR_ROOT = /gpfs01/star/subsys-tpc/fisyak/STAR
+Setting up STAR_PATH = /gpfs01/star/subsys-tpc/fisyak/STAR/packages
+Setting up WWW_HOME  = http://www.star.bnl.gov/
+Setting up STAR      = /gpfs01/star/subsys-tpc/fisyak/STAR/packages/pro
+Setting up STAR_LIB  = /gpfs01/star/subsys-tpc/fisyak/STAR/packages/pro/.sl73_gcc485/lib
+Setting up DB_SERVER_LOCAL_CONFIG = /gpfs01/star/subsys-tpc/fisyak/STAR/packages/conf/dbLoadBalancerLocalConfig_BNL.xml
+Setting up STAR_BIN  = /gpfs01/star/subsys-tpc/fisyak/STAR/packages/pro/.sl73_gcc485/bin
+Setting up STAR_PAMS = /gpfs01/star/subsys-tpc/fisyak/STAR/packages/pro/pams
+Setting up CVSROOT   = /afs/rhic.bnl.gov/star/packages/repository
+Setting up ROOT_LEVEL= 5.34.38
+Setting up SCRATCH   = /tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100
+CERNLIB version pro has been initiated with CERN_ROOT=/cern/pro
+STAR setup on spool1509.sdcc.bnl.gov by Mon Jul 1 12:06:07 EDT 2024  has been completed
+LD_LIBRARY_PATH = /gpfs01/star/subsys-tpc/fisyak/STAR/opt/star/sl73_gcc485/lib:/gpfs01/star/subsys-tpc/fisyak/STAR/opt/star/lib:/gpfs01/star/subsys-tpc/fisyak/STAR/opt/star/sl73_gcc485/qt4/lib:.sl73_gcc485/lib:/gpfs01/star/subsys-tpc/fisyak/STAR/packages/pro/.sl73_gcc485/lib:/gpfs01/star/subsys-tpc/fisyak/STAR/ROOT/5.34.38/.sl73_gcc485/rootdeb/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/py-pyparsing-2.2.0-kno27rvkh52pvr7pjdemr6x4msb7rf3o/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/python-2.7.18-wyj7ywvpc2ked6uiq37ymsydl7f2hcue/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/zlib-1.2.12-o6ydcjy4nljft3elfwfzy5g3hzdnl3fx/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/vc-0.7.4-rjlij3fhluxhftifekgnemfbqxtvgsyf/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/root-5.34.38-fta7antlmbz65avo4vw6tf7xsbtghfc4/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/rave-2020-08-11-jlvlerciuaja6v6c55h2rlot3atadjw5/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/python-3.8.13-bmo4yun7ss2txyg3iupyrym5v4gvpxwo/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/py-pyparsing-3.0.6-eyqnwk34ulfpfarcwlbi3qfwbgwoyic7/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/mysql-5.6.43-l53d4b6d4hx44oqovuc27nnetbjp2ybo/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/log4cxx-0.10.0-h72to442hnyvywgzhcrmcss72drevnrq/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/libxml2-2.9.13-lz3lyneygrxk2qymkpnt2zgjjf7pg4iu/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/libiconv-1.16-ng3cybyv7lydzuxtdcds5my576rbtrtu/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/kitrack-01-10-star-1-ywh7shhzugrsudl444oqfxjsqopbrkxp/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/gsl-2.7.1-ies4zztcuz3676oexoimjfpyefer7hfo/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/genfit-b496504a-wvyuxrap4b3cvahjjuopqfk7i7u74n6s/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86/gcc-4.8.5/fastjet-3.3.4-2ro35ixrxr4b5jn4dprn46h3t37n64od/lib:.sl73_gcc485/LIB:/afs/rhic.bnl.gov/star/packages/.DEV2/.sl73_gcc485/lib:/afs/rhic.bnl.gov/star/ROOT/5.99.99/.sl73_gcc485/root/lib:/afs/rhic.bnl.gov/star/ROOT/5.99.99/.sl73_gcc485/rootdeb/lib:/opt/star/sl73_gcc485/qt4/lib:/opt/star/sl73_gcc485/lib:/afs/rhic.bnl.gov/star/ROOT/Xrootd/prod/.sl73_gcc485/lib:/usr/lib:/usr/lib/mysql
+Unknown terminal: 
+gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-11)
+Unknown terminal: 
+Unknown terminal: 
+Unknown terminal: 
+Unknown terminal: 
+======= Active TFG, retired releases mark by "-"  =============================================================================================
+<ul>
+<li>-TFG16a Production of 50 M events 2014 AuAu200 and 32 M 2013 pp510W  2016-02-12 13:06:04 -0500  (tag: v02-11-16, TFG16a)
+<li>-TFG16d                                                              2016-10-03 18:05:06 -0400  (tag: TFG16d_1, TFG16d_1)
+<li>-TFG16e                                                              2016-10-17 19:09:00 -0400  (tag: TFG16e, TFG16e)
+<li>-TFG16f                                                              2016-10-19 14:27:45 -0400  (HLT/TFG16f)
+<li>-TFG17g                                                              2017-08-20 09:03:45 -0400  (tag: TFG17g_4)
+<li>-TFG17h                                                              2017-08-31 15:26:01 -0400  (tag: TFG17h_3)
+<li>-TFG17i                                                              2017-09-04 19:10:46 -0400  (tag: TFG17i_1)
+<li>-TFG17j The fix point for VMC alignment, keep KFP at the 1st point   2017-09-13 15:39:53 -0400  (tag: TFG17j_3, tag: TFG17j_2)
+<li>-TFG17k The first release with iTPC in sector 20                     2017-10-05 18:43:13 -0400  (tag: TFG17k)
+<li>-TFG17l Freeze PicoDst                                               2017-11-02 09:37:30 -0400  (tag: TFG17l)
+<li>-TFG17m Fix precision in PicoDst                                     2017-11-15 12:27:29 -0500  (tag: TFG17m_1)
+<li>-TFG17n Freeze PicoDst before production                             2017-11-19 10:22:04 -0500  (HEAD, tag: TFG17n_1, master)
+<li>-TFG17o Freeze PicoDst before production                             2017-12-05 16:31:17 -0500  (HEAD, tag: TFG17o)
+<li>-TFG17o Adjust dE/dx and dN/dx for ToF                               2017-12-22 10:22:04 -0500  (HEAD, tag: TFG17p_1)
+<li>-TFG17o Freeze RCF version                                           2017-12-15 14:53:01 -0500  (tag: TFG17op2)
+<li>-TFG17r Freeze before merging with HLT (Grigory & Maksym)            2017-12-19 15:22:01 -0500  (tag: TFG17r)
+<li>-TFG17q Freeze after  merging with HLT (Grigory & Maksym)            2017-12-19 16:22:01 -0500  (tag: TFG17q)
+<li>-TFG17u Fix Grigory StiCA (MakeSeeds), switch off dN/dx              2017-12-27 10:22:01 -0500  (tag: TFG17u)
+<li>-TFG17v switch off debug in FpdmGeo4.xml                             2017-12-29 12:59:48 -0500  (HEAD, tag: TFG17v, master)
+<li>-TFG18a release for 2016 embedding with fixed ToF, new CA with V5 on 2018-01-10 14:58:24 -0500  (HEAD, tag: TFG18a, master)
+<li>-TFG18b new CA with V5 swithced on.                                  2018-01-24 16:23:50 -0500  (HEAD, tag: TFG18b_3, master)
+<li>-TFG18c FemtoDst                                                     2018-02-06 18:39:50 -0500  (HEAD, tag: TFG18c_1, master)
+<li>-TFG18d Merge with Maksym KFParticle, fix dEdxPull,StiTpc for iTPC   2018-02-26 16:12:12 -0500  (tag: TFG18d_1)
+<li>-TFG18e adjust VMC embedding for RCF                                 2018-03-11 23:39:34 -0400  (HEAD -> master, tag: TFG18e)
+<li>-TFG18f introduce StGoodTrigger                                      2018-03-16 12:05:56 -0400  (tag: TFG18f)
+<li>-TFG18g Reshape Sti for sector 20                                    2018-04-03 14:52:45 -0400  (tag: TFG18g_2)
+<li>-TFG18i Fix infinit loop in StSstUtil, add smearing of origin vx     2018-04-18 12:32:48 -0400  (HEAD, tag: TFG18i, origin/master, origin/HEAD, master)
+<li>-TFG18j iTPC Cluster Finder offline                                  2018-05-14 18:33:18 -0400  (HEAD -> master, tag: TFG18j)
+<li>-TFG18k iTPC ADC correction, revision StTpcRSMaker                   2018-06-13 18:33:18 -0400  (HEAD -> master, tag: TFG18k)
+<li>-TFG18l Freeze iTPCalignment, and 2018 isobar dE/dx calibration      2018-07-31 20:22:29 -0400  (tag: TFG18l)
+<li>-TFG18m 2018 isobar and 27 AuAu dE/dx calibration, GN PicoDst        2018-08-22 11:58:30 -0400  (HEAD -> master, tag: TFG18m_2)
+<li> TFG18n 2018 fix iTPC dE/dx, fix dE/dx to Ifit on PicoDst, MuMcAna   2018-09-10 15:26:28 -0400  (HEAD -> master, tag: TFG18n_3)
+<li>-TFG18o GenFit for Stx                                               2018-10-31 12:13:03 -0400  (HEAD -> master, tag: TFG18o)
+<li>          VP modification for 64 bits                                2018-11-29 11:47:49 -0500  (tag: v-11-29-18RCF)
+<li>-TFG18p	reshape TpcRS, freeze GenFit                             2018-12-07 10:14:16 -0500  (HEAD -> master, tag: TFG18p_1, TFG18p_1)
+<li>-TFG18q fix a bug in TpcRS and VMCAppl                               2018-12-15 10:14:16 -0500  (HEAD -> master, tag: TFG18q)
+<li>-TFG19a Freeze Stx, StEvent with VMC path                            2019-02-04 16:24:49 -0500  (HEAD -> master, tag: TFG19a_12)
+<li>-TFG19b Freeze Stx, StEvent with VMC path                            2019-02-12 22:42:25 -0500  (HEAD -> master, tag: TFG19b, origin/master, origin/HEAD)
+<li>-TFG19c Freeze library for eXpress production (+64bits)              2019-03-05 11:27:28 -0500  (HEAD -> master, tag: TFG19c_3)
+<li>-TFG19d Freeze library for eXpress production with intermediate cal. 2019-04-14 16:44:16 -0400  (tag: TFG19e_3)
+<li> TFG19e HLT express production 2019                                  2019-05-30 20:23:14 -0400  (HEAD -> master, tag: TFG19e_4)
+<li> TFG19f freeze before moving to new Grigory's CA                     2019-07-16 14:31:48 -0400  (HEAD, tag: TFG19f_5)
+<li> TFG19g old CA, add to StarMCSimplePrimaryGenerator real PV position 2019-07-26 10:26:59 -0400  (HEAD -> master, tag: v07-26-19RCF, tag: TFG19g_4)
+<li> TFG19h freeze to reproces BES-I pico Dst                            2019-09-29 11:48:48 -0400  (HEAD -> master, tag: TFG19h)
+<li> TFG19i freeze to process dE/dx calibration sample for BES-II        2019-10-15 15:07:29 -0400  (HEAD -> master, tag: TFG19i_1)
+<li> TFG19j add dN/dx, latest updates from maksym                        2019-10-31 11:26:42 -0400  (HEAD -> master, tag: TFG19j_1)
+<li>-TFG19k Freeze Run XVIII and Run XIX dE/dx                           2019-11-14 09:38:28 -0500  (HEAD -> master, tag: TFG19k)
+<li> TFG19l Freeze for Run XIX 31GeV Xproduction + Grigiry's fix         2019-12-06 11:30:02 -0500  (HEAD -> master, tag: TFG19l_1)
+<li> TFG19l Reinstall dN/dx                                              2019-12-09 16:17:30 -0500  (HEAD, tag: TFG19l_2)
+<li> TFG19m Prepare xProduction of Run XX                                2019-12-24 12:00:04 -0500  (HEAD -> master, tag: TFG19m)
+<li> TFG20a Prepare xProduction of Run XX Fixed Target                   2020-01-28 16:53:27 -0500  (HEAD -> master, tag: TFG20a_1)
+<li> TFG20b Freeze before moving to Calibration Run XX, fix a few bags   2020-03-21 12:18:11 -0400  (tag: TFG20b_2)
+<li> TFG20c Freeze as a possible merging poing with "official" STAR      2020-05-18 18:09:29 -0400  (HEAD -> master, tag: TFG20c_3)
+<li> TFG20d Freeze before step back with StTpcRSMaker                    2020-05-30 09:33:17 -0400  (HEAD -> master, tag: TFG20d)
+<li> TFG20e Freeze before step back with StTpcRSMaker from TFG20d        2020-06-15 16:06:52 -0400  (HEAD -> master, tag: TFG20e)
+<li> TFG20f Check point before step back in StTpcRSMaker                 2020-06-20 12:40:33 -0400  (HEAD -> master, tag: TFG20f)
+<li> TFG20g Add Grisha's fix for CA, add gcc 10.01.00                    2020-09-06 16:35:35 -0400  (HEAD -> master, tag: TFG20g_9)
+<li> TFG20h Freeze before updating geant and KFParticle                  2020-09-19 18:41:05 -0400  (HEAD -> master, tag: TFG20h_1)
+<li> TFG20i KFParticle (07/2020) and geant3 version 3, Add more fixes    2020-10-14 11:00:10 -0400  (HEAD -> master, tag: TFG20i_5)
+<li>-DEV6  head of TFG git repository build with ROOT6 merged with TFG20j
+<li> TFG20j add ROOT6 usage via ROOT_VERSION for standard libraries      2020-11-16 15:24:43 -0500  (HEAD -> master, tag: TFG20j_7)
+<li> TFG20k freeze before modifying StMagUtility                         2021-01-07 11:11:11 -0500  (HEAD -> master, tag: TFG20k_2)
+<li> TFG21a modifying StMagUtility                                       2021-01-07 11:56:30 -0500  (HEAD -> master, tag: TFG21a)
+<li> TFG21b back StMagUtility, __kfpAtFirstHit__=1,TPC calib from TFG20a 2021-01-21 19:34:06 -0500  (HEAD -> master, tag: TFG21b)
+<li> TFG21c express production release for Run XXI, add fix TpcHitMaker  2021-02-13 19:02:40 -0500  (HEAD -> master, tag: TFG21c_5)
+<li> TFG21d freeze VMC, CAVx,                                            2021-03-27 18:59:05 -0400  (HEAD -> master, tag: TFG21d)
+<li> TFG21e Merge with Maksym,starMagAvg, 3p85GeV_fixedTarget_2021       2021-05-01 18:42:27 -0400  (HEAD -> master, tag: TFG21e)
+<li> TFG21e Remove EMC from picoDst due to memory leak                   2021-05-02 15:12:09 -0400  (HEAD -> master, tag: TFG21e_2)
+<li> TFG21f Reshape dE/dx calibration for 3p85GeV_fxt for 2B production  2021-06-05 19:39:14 -0400  (HEAD -> master, tag: TFG21f)
+<li> TFG21g Updatee dE/dx calibration for 3p85GeV_fxt for 2B production  2021-06-08 21:52:26 -0400  (HEAD -> master, tag: TFG21g)
+<li> TFG21g Remove zcut in StMinuitVertexFinder                          2021-06-29 14:36:12 -0400  (HEAD -> master, tag: TFG21g_2)
+<li> TFG21g Fix fixed Target definion mixed up for dAu200                2021-07-02 15:16:45 -0400  (HEAD -> master, tag: TFG21g_3)
+<li> TFG21h Switch to github, Run XXI calibration production             2021-08-03 15:16:45 -0400  (HEAD -> master, tag: TFG21h)
+<li> TFG21i Freeze before merging with github star-sw fisyakbn           2021-08-11 18:18:46 -0400  (HEAD -> main, tag: TFG21i)
+<li> TFG21j Freeze after merging with github star-sw fisyakbn            2021-08-12 10:41:06 -0400  (HEAD -> main, tag: TFG21j_1, origin/main, origin/HEAD)
+<li> TFG21j Freeze after merging with github star-sw fisyakbn            2021-08-12 10:41:06 -0400  (HEAD -> main, tag: TFG21j_1, origin/main, origin/HEAD)
+<li> TFG21k Freeze after merging with fisyakbnTFG TFG_082421_merge_2     2021-08-24 12:36:48 -0400  (HEAD -> main, tag: TFGMerged062421, tag: TFG21k, origin/main, origin/HEAD)
+<li> TFG21l The 1st release git@github.com:fisyak/star-sw.git TFG branch 2021-09-08 11:29:30 -0400  (HEAD -> TFG, tag: TFG21l)
+<li> TFG21m Merge with star-sw                                           2021-10-30 18:02:07 -0400  (HEAD -> TFG, tag: TFG21m)
+<li> TFG21n Merge with star-sw & Maksym                                  2021-11-22 15:50:40 -0500  (HEAD -> TFG, tag: TFG21n)
+<li> TFG22a Freeze release for 2022 express production Merge             2022-01-15 19:09:11 -0500  (HEAD -> TFG, tag: TFG22a_5)
+<li> TFG22b Fixes for StTpcRSMaker with Altro/Sampa, patch TGean3        2022-04-29 12:43:39 -0400  (HEAD, tag: TFG22b_1)
+<li> TFG22c Fix before move to new dEdx, add chairs                      2022-04-22 16:31:18 -0400  (HEAD -> TFG, tag: TFG22c_1)
+<li> TFG22d Add new dEdx, dead FEE, Freeze 19GeV_2019, separate builds   2022-05-08 19:13:42 -0400  (HEAD -> TFG, tag: TFG22d)
+<li> TFG22e Freeze 7p7GeV 2021 dE/dx calibration                         2022-05-23 14:34:38 -0400  (HEAD -> TFG, tag: TFG21e)
+<li> TFG22f Fix TFG StTrackTopologyMap, TPC23, ClusteringHints streamer  2022-06-04 09:16:14 -0400  (HEAD -> TFG, tag: TFG22f)
+<li> TFG22g Freeze new dE/dx model                                       2022-08-11 10:05:12 -0400  (HEAD -> TFG, tag: TFG22g)
+<li> TFG22h Freeze befoore updating dE/dx model, fix   KPidParticles     2022-09-28 15:35:34 -0400  (HEAD -> TFG, tag: TFG22h_3, origin/TFG)
+<li> TFG22i Replace loading gain from dta_Tpx->request to tpxGain        2022-10-14 12:21:16 -0400  (HEAD -> TFG, tag: TFG22i)
+<li> TFG22j Finish dE/dx calibration RunXIX_XXII_79                      2022-12-15 19:13:11 -0500  (HEAD -> TFG, tag: TFG22j_5)
+<li> TFG23a Tune TpcRS for y2009 & y2021                                 2023-02-05 12:38:48 -0500  (HEAD -> TFG, tag: TFG23a_4, origin/TFG)
+<li> TFG23b RunXIX_XXII dE/dx calibration                                2023-03-17 10:59:25 -0400  (HEAD -> TFG, tag: TFG23b_4)
+<li> TFG23c Freeze tpcExtraGainCorrection, StKFParticleAnalysis          2023-04-30 11:53:11 -0400  (HEAD -> TFG, tag: TFG23c)
+<li> TFG23d Freeze CA, StKFParticle, StdEdxY2Maker,...                   2023-08-01 09:55:16 -0400  (HEAD -> TFG, tag: TFG23d)
+<li> TFG23e Introduce MDF4 Tpc Hit Errors, Cons tuning                   2023-09-23 15:53:14 -0400  (HEAD -> TFG, tag: TFG23e_1)
+<li> TFG23f Freeze daq5k modification in StTpcHitMaker                   2023-11-04 13:15:47 -0400  (HEAD -> TFG, tag: TFG23f)
+<li> TFG24a Freeze ROOT 6.30.00                                          2024-01-07 10:15:24 -0500  (HEAD -> TFG, tag: TFG24a_3)
+<li> TFG24b Freeze for Run XXIV                                          2024-05-04 10:41:16 -0400  (HEAD -> TFG, tag: TFG24b)
+<li>.DEV2   head of TFG git repository
+</ul>
+Unknown terminal: 
+Unknown terminal: 
+Unknown terminal: 
+if: Expression Syntax.
+Starting copy block
+Running copy command:  /bin/cp -fp /tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/root_100.log /star/data01/pwg/svianping/log/
+Starting copy block
+Running copy command:  /bin/cp -fp /tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/output_100.root /star/data01/pwg/svianping/output/
+Starting copy block
+Running copy command:  /bin/cp -fp /tmp/svianping/07E293B94CAF1FD7FDCDC64DDAE3A27A_100/KFParticleQA_100.root /star/data01/pwg/svianping/output/
+54809 Execution of (/star/u/svianping/STAR_Files/KFParticle4Lambda/xml/sched07E293B94CAF1FD7FDCDC64DDAE3A27A_100.csh ) has ended, exiting normally
+54809 We END on [Mon Jul  1 12:07:47 EDT 2024]
