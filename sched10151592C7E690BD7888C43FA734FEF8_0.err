@@ -1,4 +1,0 @@
-[1]  + Done                          ( ( setenv SUMS_EXECUTION 1 && nohup $0 $* ) > $SCRATCH/.output.log ) >& $SCRATCH/.errror.log
-Error in <TFile::TFile>: file output_1.root does not exist
-Error in <TFileMerger::AddFile>: cannot open file output_1.root
-hadd exiting due to error in output_1.root
